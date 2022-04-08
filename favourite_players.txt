@@ -1,1 +1,1 @@
-[]
+[{"Name":"Sami KHEDIRA","Captain":false,"Shirt_number":6,"Position":"Midfield","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Marvin PLATTENHARDT","Captain":false,"Shirt_number":2,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Mats HUMMELS","Captain":false,"Shirt_number":5,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false}]

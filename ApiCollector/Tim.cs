@@ -23,5 +23,7 @@ namespace ApiCollector
         public int Goals_for { get; set; }
         public int Goals_against { get; set; }
         public int Goal_differential { get; set; }
+
+        public override string ToString() => $"{Country} ({Fifa_code})";
     }
 }

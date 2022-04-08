@@ -22,17 +22,14 @@ namespace FootballApp
         private async void OmiljeniTim_Load(object sender, EventArgs e)
         {
             List<ApiCollector.Tim> list = await Collector.DohvatiMuskoPrvenstvo();
-            foreach (ApiCollector.Tim tim in list)
-            {
-                this.cbOmiljeniTim.Items.Add($"{tim.Country} ({tim.Fifa_code})");
-            }
+            cbOmiljeniTim.DataSource = list;
         }
 
         private void btnSpremiOmiljeniTim_Click(object sender, EventArgs e)
         {
             SaverLoader.tim = new ApiCollector.Tim();
-            string fifaCode = cbOmiljeniTim.GetItemText(this.cbOmiljeniTim.SelectedItem);
-            SaverLoader.tim.Fifa_code = fifaCode.Remove(0, fifaCode.IndexOf(' ')).Replace('(', ' ').Replace(')', ' ').Trim();
+            var tim =(Tim)cbOmiljeniTim.SelectedValue;
+            SaverLoader.tim.Fifa_code = tim.Fifa_code;
 
             MessageBox.Show("Omiljeni tim je spremljen!");
         }
