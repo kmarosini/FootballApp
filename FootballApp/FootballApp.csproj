@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7CAAFD43-EE31-4375-B62F-10AB9B370B13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FootballApp</RootNamespace>
+    <AssemblyName>FootballApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DGV Printer">
+      <HintPath>..\..\..\..\Downloads\dgvprinter\DGV Printer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavnaForma.Designer.cs">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IgracInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IgracInfo.Designer.cs">
+      <DependentUpon>IgracInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformacijeOUtakmici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformacijeOUtakmici.Designer.cs">
+      <DependentUpon>InformacijeOUtakmici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JezikPrvenstvoForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JezikPrvenstvoForma.Designer.cs">
+      <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OmiljeniIgraci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OmiljeniIgraci.Designer.cs">
+      <DependentUpon>OmiljeniIgraci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OmiljeniTim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OmiljeniTim.Designer.cs">
+      <DependentUpon>OmiljeniTim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Postavke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Postavke.Designer.cs">
+      <DependentUpon>Postavke.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RangLista.Designer.cs">
+      <DependentUpon>RangLista.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GlavnaForma.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IgracInfo.resx">
+      <DependentUpon>IgracInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacijeOUtakmici.resx">
+      <DependentUpon>InformacijeOUtakmici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JezikPrvenstvoForma.resx">
+      <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OmiljeniIgraci.resx">
+      <DependentUpon>OmiljeniIgraci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OmiljeniTim.resx">
+      <DependentUpon>OmiljeniTim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RangLista.resx">
+      <DependentUpon>RangLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\ApiCollector.Games+Root.datasource" />
+    <None Include="Properties\DataSources\ApiCollector.SkupIgraca.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiCollector\ApiCollector.csproj">
+      <Project>{c1d57de3-2f14-4483-9990-7d9f1ed5c995}</Project>
+      <Name>ApiCollector</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

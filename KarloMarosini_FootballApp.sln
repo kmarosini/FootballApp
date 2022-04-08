@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballApp", "FootballApp\FootballApp.csproj", "{7CAAFD43-EE31-4375-B62F-10AB9B370B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCollector", "ApiCollector\ApiCollector.csproj", "{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CAAFD43-EE31-4375-B62F-10AB9B370B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CAAFD43-EE31-4375-B62F-10AB9B370B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CAAFD43-EE31-4375-B62F-10AB9B370B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CAAFD43-EE31-4375-B62F-10AB9B370B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F08BD71C-685F-4E0A-BCF6-9CC303B9F150}
+	EndGlobalSection
+EndGlobal
