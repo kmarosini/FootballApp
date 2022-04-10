@@ -51,7 +51,7 @@ namespace ApiCollector
         // spremanje u datoteku
         public static void SpremiJezikIPrvenstvo()
         {
-            string txt = $"{Prvenstvo}{DEL}{Jezik}{DEL}{tim.Fifa_code}";
+            string txt = $"{Prvenstvo}{DEL}{Jezik}{DEL}{tim?.Fifa_code}";
             File.WriteAllText(PATH, txt);
         }
 

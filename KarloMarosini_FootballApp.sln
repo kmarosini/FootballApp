@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballApp", "FootballApp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiCollector", "ApiCollector\ApiCollector.csproj", "{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballAppWPF", "FootballAppWPF\FootballAppWPF.csproj", "{20C0037B-DED8-48E2-9601-F7D198D958AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20C0037B-DED8-48E2-9601-F7D198D958AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20C0037B-DED8-48E2-9601-F7D198D958AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20C0037B-DED8-48E2-9601-F7D198D958AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20C0037B-DED8-48E2-9601-F7D198D958AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
