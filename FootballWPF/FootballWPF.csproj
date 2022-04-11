@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{20C0037B-DED8-48E2-9601-F7D198D958AB}</ProjectGuid>
+    <ProjectGuid>{969ADA3D-0737-4FA1-A4E4-1FEB5E13DC1A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>FootballAppWPF</RootNamespace>
-    <AssemblyName>FootballAppWPF</AssemblyName>
+    <RootNamespace>FootballWPF</RootNamespace>
+    <AssemblyName>FootballWPF</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,6 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="StartingWindow.xaml.cs">
+      <DependentUpon>StartingWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="GameWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,10 +70,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GameWindow.xaml.cs">
+      <DependentUpon>GameWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="StartingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -96,7 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ApiCollector\ApiCollector.csproj">
-      <Project>{c1d57de3-2f14-4483-9990-7d9f1ed5c995}</Project>
+      <Project>{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}</Project>
       <Name>ApiCollector</Name>
     </ProjectReference>
   </ItemGroup>

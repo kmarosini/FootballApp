@@ -1,7 +1,7 @@
-﻿<Application x:Class="FootballAppWPF.App"
+﻿<Application x:Class="FootballWPF.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:FootballAppWPF"
+             xmlns:local="clr-namespace:FootballWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          

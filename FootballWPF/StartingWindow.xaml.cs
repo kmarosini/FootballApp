@@ -11,19 +11,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace FootballAppWPF
+namespace FootballWPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StartingWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartingWindow : Window
     {
-        public MainWindow()
+        public StartingWindow()
         {
             InitializeComponent();
+            ApiCollector.SaverLoader.CreateFile();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -43,6 +43,7 @@ namespace FootballAppWPF
 
             SaverLoader.Jezik = cbJezik.Text;
             SaverLoader.Prvenstvo = cbPrvenstvo.Text;
+            SaverLoader.Resolution = cbResolution.Text;
 
             MessageBox.Show("Jezik i prvenstvo su spremljeni!");
         }

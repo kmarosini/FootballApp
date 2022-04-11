@@ -19,6 +19,7 @@ namespace ApiCollector
         public static string Prvenstvo;
         public static string Jezik;
         public static string fifa;
+        public static string Resolution;
         public static Tim tim;
 
         // kreiranje config file-a
@@ -51,7 +52,7 @@ namespace ApiCollector
         // spremanje u datoteku
         public static void SpremiJezikIPrvenstvo()
         {
-            string txt = $"{Prvenstvo}{DEL}{Jezik}{DEL}{tim?.Fifa_code}";
+            string txt = $"{Prvenstvo}{DEL}{Jezik}{DEL}{tim?.Fifa_code}{DEL}{Resolution}";
             File.WriteAllText(PATH, txt);
         }
 
@@ -67,6 +68,7 @@ namespace ApiCollector
                 tim = new Tim();
             }
             tim.Fifa_code = items[2];
+            Resolution = items[3];
         }
 
         public static void LoadFavoritIgrace()

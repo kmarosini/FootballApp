@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FootballAppWPF.Properties
+namespace FootballWPF.Properties
 {
 
 

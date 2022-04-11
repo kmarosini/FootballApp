@@ -1,0 +1,54 @@
+﻿<Window x:Class="FootballWPF.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballWPF"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="450" Width="800">
+    <Grid>
+        <Border Padding="50">
+            <Grid>
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0" Margin="10 0 40 10">
+                            <Label Content="Omiljena reprezentacija:"/>
+                            <ComboBox x:Name="cbOmiljenaReprezentacija">
+                            </ComboBox>
+                            <Button Margin="10" Width="90">Pogledaj detalje</Button>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" Margin="10 0 40 10">
+                            <Label Content="Protivnik:" />
+                            <ComboBox x:Name="cbProtivnik">
+                            </ComboBox>
+                            <Button Margin="10" Width="90">Pogledaj detalje</Button>
+                        </StackPanel>
+                    </Grid>
+                    <Grid>
+                        <Button Content="Spremi" Width="70" Margin="20"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <Label FontSize="30" HorizontalAlignment="Right">0</Label>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <Label FontSize="30" HorizontalAlignment="Center">:</Label>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <Label FontSize="30">2</Label>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
