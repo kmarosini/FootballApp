@@ -11,6 +11,7 @@ namespace ApiCollector
     public class PrepareForForm
     {
         public static List<SkupIgraca> favourites = new List<SkupIgraca>();
+        public static List<SkupIgraca> protivnici = new List<SkupIgraca>();
 
         public static void InsertInList(SkupIgraca p)
         {
@@ -150,6 +151,27 @@ namespace ApiCollector
             return listaIgraca;
         }
 
+
+        public static async Task<Dictionary<string,string>> DohvatiProtivnike()
+        {
+            List<Games.Root> listaIgraca = await DohvatiIgraca();
+
+            Dictionary<string,string> keyValuePairs = new Dictionary<string,string>();
+
+            foreach (var x in listaIgraca)
+            {
+                if (x.home_team.code != SaverLoader.tim.Fifa_code)
+                {
+                    keyValuePairs.Add(x.home_team.code, x.home_team.country);
+                }
+                if (x.away_team.code != SaverLoader.tim.Fifa_code)
+                {
+                    keyValuePairs.Add(x.away_team.code, x.away_team.country);
+                }
+            }
+
+            return keyValuePairs;
+        }
 
     }
 

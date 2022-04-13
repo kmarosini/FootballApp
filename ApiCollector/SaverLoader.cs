@@ -61,6 +61,10 @@ namespace ApiCollector
         {
             string lines = File.ReadAllText(PATH);
             string[] items = lines.Split('|');
+            if (items.Count() == 1)
+            {
+                return;
+            }
             Prvenstvo = items[0];
             Jezik = items[1];
             if (tim == null)

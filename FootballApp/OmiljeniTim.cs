@@ -30,6 +30,7 @@ namespace FootballApp
             SaverLoader.tim = new ApiCollector.Tim();
             var tim =(Tim)cbOmiljeniTim.SelectedValue;
             SaverLoader.tim.Fifa_code = tim.Fifa_code;
+            
 
             MessageBox.Show("Omiljeni tim je spremljen!");
         }
