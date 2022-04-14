@@ -23,6 +23,10 @@ namespace ApiCollector
         }
         public static async Task<List<Games.Root>> DohvatiIgraca()
         {
+            if (SaverLoader.tim == null)
+            {
+                return new List<Games.Root>();
+            }
             if (SaverLoader.Prvenstvo == "Muško")
             {
                 string url = SaverLoader.tim.Fifa_code;
@@ -34,7 +38,7 @@ namespace ApiCollector
                     List<Games.Root> myDeserializedClass = JsonConvert.DeserializeObject<List<Games.Root>>(await emp);
                     return myDeserializedClass;
                 }
-                return null;
+                return new List<Games.Root>();
             }
             else if (SaverLoader.Prvenstvo == "Žensko")
             {
@@ -47,9 +51,9 @@ namespace ApiCollector
                     List<Games.Root> myDeserializedClass = JsonConvert.DeserializeObject<List<Games.Root>>(await emp);
                     return myDeserializedClass;
                 }
-                return null;
+                return new List<Games.Root>();
             }
-            return null;
+            return new List<Games.Root>();
         }
         public static async Task<List<ApiCollector.SkupIgraca>> DohvatiImenaIgraca()
         {

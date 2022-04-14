@@ -55,26 +55,47 @@ namespace FootballWPF
 
         private async void btnSpremi_OnClick(object sender, RoutedEventArgs e)
         {
-            var prviTim = SaverLoader.tim.Fifa_code;
-            var drugiTim = cbProtivnik.Text.Split('(', ')');
-            var protivnik = drugiTim[1];
-
-            List<Games.Root> listaMeceva = await PrepareForForm.DohvatiIgraca();
-
-            foreach (var item in listaMeceva)
+            try
             {
-                if (item.home_team.code == prviTim && item.away_team.code == protivnik)
+                var prviTim = SaverLoader.tim.Fifa_code;
+                var drugiTim = cbProtivnik.Text.Split('(', ')');
+                var protivnik = drugiTim[1];
+
+                List<Games.Root> listaMeceva = await PrepareForForm.DohvatiIgraca();
+
+                foreach (var item in listaMeceva)
                 {
-                    lblProtivnik.Content = item.away_team.goals.ToString();
-                    lblFavorit.Content = item.home_team.goals.ToString();
-                }
-                if (item.away_team.code == prviTim && item.home_team.code == protivnik)
-                {
-                    lblFavorit.Content = item.away_team.goals.ToString();
-                    lblProtivnik.Content = item.home_team.goals.ToString();
+                    if (item.home_team.code == prviTim && item.away_team.code == protivnik)
+                    {
+                        lblProtivnik.Content = item.away_team.goals.ToString();
+                        lblFavorit.Content = item.home_team.goals.ToString();
+                    }
+                    if (item.away_team.code == prviTim && item.home_team.code == protivnik)
+                    {
+                        lblFavorit.Content = item.away_team.goals.ToString();
+                        lblProtivnik.Content = item.home_team.goals.ToString();
+                    }
                 }
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Niste izabrali protivnika!");
+            }
 
+            
+
+        }
+
+        private void btnFavoritDetalji_OnClick(object sender, RoutedEventArgs e)
+        {
+            TeamDetailsWindow favorit = new TeamDetailsWindow();
+            favorit.Show();
+        }
+
+        private void btnProtivnikDetalji_OnClick(object sender, RoutedEventArgs e)
+        {
+            TeamDetailsProtivnikWindow protivnik = new TeamDetailsProtivnikWindow(this.cbProtivnik);
+            protivnik.Show();
         }
     }
 }

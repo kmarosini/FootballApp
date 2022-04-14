@@ -1,0 +1,62 @@
+﻿<Window x:Class="FootballWPF.TeamDetailsProtivnikWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballWPF"
+        mc:Ignorable="d"
+        Title="TeamDetailsProtivnikWindow" Height="300" Width="600"
+        Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">NAZIV:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblNaziv"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">FIFA CODE:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblFifa"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">ODIGRANE/POBJEDE/PORAZI/NEODLUČENI:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblOdigraniPobjede"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">ZABIJENI/PRIMLJENI/RAZLIKA:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblGoloviZabijeni"></Label>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

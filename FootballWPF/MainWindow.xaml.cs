@@ -24,8 +24,6 @@ namespace FootballWPF
         public MainWindow()
         {
             InitializeComponent();
-            SaverLoader.UcitajPostavke();
-            ProvjeriRezoluciju();
             if (!SaverLoader.CreateFile())
             {
                 Main.Content = new LangChampPage();
@@ -34,6 +32,9 @@ namespace FootballWPF
             {
                 Main.Content = new ResultPage();
             }
+            SaverLoader.UcitajPostavke();
+            ProvjeriRezoluciju();
+            
         }
 
         private void ProvjeriRezoluciju()

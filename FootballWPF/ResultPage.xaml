@@ -23,14 +23,14 @@
                             <Label Content="Omiljena reprezentacija:"/>
                             <ComboBox x:Name="cbOmiljenaReprezentacija">
                             </ComboBox>
-                            <Button Margin="10" Width="90">Pogledaj detalje</Button>
+                            <Button Margin="10" Width="90" Click="btnFavoritDetalji_OnClick">Pogledaj detalje</Button>
                             <Button Content="Promijeni omiljenu reprezentaciju" Width="200" Margin="20" Click="PromijeniReprezentaciju_OnClick"/>
                         </StackPanel>
                         <StackPanel Grid.Column="1" Margin="10 0 40 10">
                             <Label Content="Protivnik:" />
                             <ComboBox x:Name="cbProtivnik">
                             </ComboBox>
-                            <Button Margin="10" Width="90">Pogledaj detalje</Button>
+                            <Button Margin="10" Width="90" Click="btnProtivnikDetalji_OnClick">Pogledaj detalje</Button>
                         </StackPanel>
                     </Grid>
                     <Grid>
@@ -50,7 +50,7 @@
                         </StackPanel>
                     </Grid>
                     <Grid>
-                        <Button Margin="50" Width="50" Click="btnSpremi_OnClick">Spremi</Button>
+                        <Button Width="80" Click="btnSpremi_OnClick">Show result</Button>
                     </Grid>
                 </StackPanel>
             </Grid>

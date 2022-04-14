@@ -61,6 +61,12 @@
     <Compile Include="ResultPage.xaml.cs">
       <DependentUpon>ResultPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TeamDetailsProtivnikWindow.xaml.cs">
+      <DependentUpon>TeamDetailsProtivnikWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TeamDetailsWindow.xaml.cs">
+      <DependentUpon>TeamDetailsWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="LangChampPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,6 +84,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ResultPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeamDetailsProtivnikWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TeamDetailsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
