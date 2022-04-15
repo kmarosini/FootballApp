@@ -55,6 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Formation.xaml.cs">
+      <DependentUpon>Formation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Igrac.xaml.cs">
+      <DependentUpon>Igrac.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LangChampPage.xaml.cs">
       <DependentUpon>LangChampPage.xaml</DependentUpon>
     </Compile>
@@ -67,6 +73,14 @@
     <Compile Include="TeamDetailsWindow.xaml.cs">
       <DependentUpon>TeamDetailsWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Formation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Igrac.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LangChampPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -127,6 +141,9 @@
       <Project>{C1D57DE3-2F14-4483-9990-7D9F1ED5C995}</Project>
       <Name>ApiCollector</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Football_field.svg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

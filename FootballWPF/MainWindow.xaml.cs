@@ -62,5 +62,10 @@ namespace FootballWPF
         {
             Main.Content = new ResultPage();
         }
+
+        private void btnFormation_OnClick(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Formation();
+        }
     }
 }

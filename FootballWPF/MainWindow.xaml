@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FootballWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
         <StackPanel Orientation="Horizontal" Height="35" VerticalAlignment="Top">
             <Button Content="Jezik/Prvenstvo" Click="btnJezikPrvenstvo_Click"></Button>
             <Button Content="Match" Margin="10 0 0 0" MinWidth="50" Click="btnResultPage_Click"></Button>
+            <Button Content="Formation" Margin="10 0 0 0" MinWidth="50" Click="btnFormation_OnClick"  ></Button>
         </StackPanel>
         <Frame NavigationUIVisibility="Hidden" x:Name="Main" Margin="0,35,0,0"/>
     </Grid>
