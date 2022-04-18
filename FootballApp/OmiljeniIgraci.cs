@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApiCollector;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,6 +71,11 @@ namespace FootballApp
         {
             flpFavoritIgraci.Controls.Clear();
             ApiCollector.PrepareForForm.favourites.Clear();
+        }
+
+        private void btnPrebaci_OnClick(object sender, EventArgs e)
+        {
+            // dodaj logiku za prebacivanje oznacenih igraca
         }
     }
 }

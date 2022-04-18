@@ -37,6 +37,8 @@
             this.lblPozicija = new System.Windows.Forms.Label();
             this.lblIme = new System.Windows.Forms.Label();
             this.lblFavorit = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbOdaberiIgraca = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label7
@@ -120,11 +122,32 @@
             this.lblFavorit.Size = new System.Drawing.Size(0, 25);
             this.lblFavorit.TabIndex = 16;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 134);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "ODABERI:";
+            // 
+            // cbOdaberiIgraca
+            // 
+            this.cbOdaberiIgraca.AutoSize = true;
+            this.cbOdaberiIgraca.Location = new System.Drawing.Point(74, 132);
+            this.cbOdaberiIgraca.Name = "cbOdaberiIgraca";
+            this.cbOdaberiIgraca.Size = new System.Drawing.Size(15, 14);
+            this.cbOdaberiIgraca.TabIndex = 18;
+            this.cbOdaberiIgraca.UseVisualStyleBackColor = true;
+            this.cbOdaberiIgraca.CheckedChanged += new System.EventHandler(this.cbOdaberiIgraca_CheckedChanged);
+            // 
             // IgracInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Brown;
+            this.Controls.Add(this.cbOdaberiIgraca);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblFavorit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -153,5 +176,7 @@
         private System.Windows.Forms.Label lblPozicija;
         private System.Windows.Forms.Label lblIme;
         private System.Windows.Forms.Label lblFavorit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox cbOdaberiIgraca;
     }
 }

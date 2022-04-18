@@ -36,10 +36,7 @@ namespace FootballWPF
             }
 
             cbOmiljenaReprezentacija.ItemsSource = list;
-
-
-
-            //--------------------------------------------------------------
+            lblIzabrana.Content = $"IZABRANA REPREZENTACIJA: {SaverLoader.tim.Fifa_code}";
 
         }
 
@@ -81,9 +78,6 @@ namespace FootballWPF
             {
                 MessageBox.Show("Niste izabrali protivnika!");
             }
-
-            
-
         }
 
         private void btnFavoritDetalji_OnClick(object sender, RoutedEventArgs e)

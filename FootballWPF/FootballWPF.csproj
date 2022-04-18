@@ -37,6 +37,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -63,6 +64,9 @@
     </Compile>
     <Compile Include="LangChampPage.xaml.cs">
       <DependentUpon>LangChampPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Postavke.xaml.cs">
+      <DependentUpon>Postavke.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResultPage.xaml.cs">
       <DependentUpon>ResultPage.xaml</DependentUpon>
@@ -97,6 +101,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Postavke.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ResultPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

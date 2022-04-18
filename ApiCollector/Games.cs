@@ -137,8 +137,6 @@ namespace ApiCollector
             public List<AwayTeamEvent> away_team_events { get; set; }
             public HomeTeamStatistics home_team_statistics { get; set; }
             public AwayTeamStatistics away_team_statistics { get; set; }
-            public DateTime last_event_update_at { get; set; }
-            public DateTime last_score_update_at { get; set; }
         }
     }
 }

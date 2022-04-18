@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ApiCollector;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,23 @@ namespace FootballWPF
         public Formation()
         {
             InitializeComponent();
+        }
+
+        private async void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<ApiCollector.Tim> list = await Collector.DohvatiMuskoPrvenstvo();
+            List<ApiCollector.SkupIgraca> list2 = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
+
+            //foreach (var x in list)
+            //{
+            //    if (x.Fifa_code == SaverLoader.tim.Fifa_code)
+            //    {
+            //        foreach (var y in list2)
+            //        {
+            //            pnlIgraci.Children.Add(new Igrac());
+            //        }
+            //    }
+            //}
         }
     }
 }

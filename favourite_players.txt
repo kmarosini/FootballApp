@@ -1,1 +1,1 @@
-[{"Name":"Sime VRSALJKO","Captain":false,"Shirt_number":2,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Danijel SUBASIC","Captain":false,"Shirt_number":23,"Position":"Goalie","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Ivan STRINIC","Captain":false,"Shirt_number":3,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false}]
+[]

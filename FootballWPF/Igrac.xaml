@@ -7,6 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="30" d:DesignWidth="100">
     <Grid>
-        <Label Content="xxxx"/>
+        <Label x:Name="lblIgrac" Content="xxxx"/>
     </Grid>
 </UserControl>

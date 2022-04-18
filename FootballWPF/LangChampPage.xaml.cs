@@ -24,7 +24,15 @@ namespace FootballWPF
         public LangChampPage()
         {
             InitializeComponent();
+            IspisPostavki();
             
+        }
+
+        private void IspisPostavki()
+        {
+            lblJezik.Content = $"ODABRANI JEZIK: {SaverLoader.Jezik}";
+            lblPrvenstvo.Content = $"ODABRANO PRVENSTVO: {SaverLoader.Prvenstvo}";
+            lblScreenSize.Content = $"ODABRANA REZOLUCIJA: {SaverLoader.Resolution}";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -40,7 +48,7 @@ namespace FootballWPF
             ResizeWindow();
         }
 
-        private void ResizeWindow()
+        public static void ResizeWindow()
         {
             if (SaverLoader.Resolution == "Fullscreen")
             {

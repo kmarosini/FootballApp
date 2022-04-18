@@ -33,12 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flpFavoritIgraci = new System.Windows.Forms.FlowLayoutPanel();
             this.flpSviIgraci = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnResetOmiljenihIgraca
             // 
             this.btnResetOmiljenihIgraca.BackColor = System.Drawing.Color.Firebrick;
-            this.btnResetOmiljenihIgraca.Location = new System.Drawing.Point(567, 28);
+            this.btnResetOmiljenihIgraca.Location = new System.Drawing.Point(416, 39);
             this.btnResetOmiljenihIgraca.Name = "btnResetOmiljenihIgraca";
             this.btnResetOmiljenihIgraca.Size = new System.Drawing.Size(75, 23);
             this.btnResetOmiljenihIgraca.TabIndex = 11;
@@ -50,7 +51,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(403, 52);
+            this.label2.Location = new System.Drawing.Point(674, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 16);
             this.label2.TabIndex = 10;
@@ -72,7 +73,7 @@
             this.flpFavoritIgraci.AutoScroll = true;
             this.flpFavoritIgraci.Location = new System.Drawing.Point(406, 68);
             this.flpFavoritIgraci.Name = "flpFavoritIgraci";
-            this.flpFavoritIgraci.Size = new System.Drawing.Size(378, 355);
+            this.flpFavoritIgraci.Size = new System.Drawing.Size(378, 341);
             this.flpFavoritIgraci.TabIndex = 8;
             this.flpFavoritIgraci.DragDrop += new System.Windows.Forms.DragEventHandler(this.flpFavoritIgraci_DragDrop);
             this.flpFavoritIgraci.DragEnter += new System.Windows.Forms.DragEventHandler(this.flpFavoritIgraci_DragEnter);
@@ -82,14 +83,25 @@
             this.flpSviIgraci.AutoScroll = true;
             this.flpSviIgraci.Location = new System.Drawing.Point(17, 68);
             this.flpSviIgraci.Name = "flpSviIgraci";
-            this.flpSviIgraci.Size = new System.Drawing.Size(383, 355);
+            this.flpSviIgraci.Size = new System.Drawing.Size(383, 341);
             this.flpSviIgraci.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(310, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = ">";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnPrebaci_OnClick);
             // 
             // OmiljeniIgraci
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnResetOmiljenihIgraca);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flpFavoritIgraci;
         private System.Windows.Forms.FlowLayoutPanel flpSviIgraci;
+        private System.Windows.Forms.Button button1;
     }
 }

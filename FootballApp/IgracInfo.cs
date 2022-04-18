@@ -14,6 +14,7 @@ namespace FootballApp
     public partial class IgracInfo : UserControl
     {
         private SkupIgraca igrac;
+        public bool Checked { get; set; }
         public IgracInfo(SkupIgraca igrac)
         {
             InitializeComponent();
@@ -46,6 +47,13 @@ namespace FootballApp
             {
                 this.DoDragDrop(this, DragDropEffects.All | DragDropEffects.Move);
             }
+        }
+
+        // postavljanje checkbox value-a
+        private void cbOdaberiIgraca_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox checkBox = new CheckBox();
+            checkBox.Checked = true;
         }
     }
 }
