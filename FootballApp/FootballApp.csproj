@@ -73,6 +73,11 @@
     <Compile Include="JezikPrvenstvoForma.Designer.cs">
       <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="MojiResursi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MojiResursi.resx</DependentUpon>
+    </Compile>
     <Compile Include="OmiljeniIgraci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +104,11 @@
     <Compile Include="RangLista.Designer.cs">
       <DependentUpon>RangLista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resursi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resursi.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="GlavnaForma.resx">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +120,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JezikPrvenstvoForma.resx">
       <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MojiResursi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MojiResursi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="OmiljeniIgraci.resx">
       <DependentUpon>OmiljeniIgraci.cs</DependentUpon>
@@ -132,6 +146,10 @@
     <EmbeddedResource Include="RangLista.resx">
       <DependentUpon>RangLista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resursi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resursi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\DataSources\ApiCollector.Games+Root.datasource" />
     <None Include="Properties\DataSources\ApiCollector.SkupIgraca.datasource" />
     <None Include="Properties\Settings.settings">
@@ -152,6 +170,12 @@
       <Project>{c1d57de3-2f14-4483-9990-7d9f1ed5c995}</Project>
       <Name>ApiCollector</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MojiResursi\ikona.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MojiResursi\ball.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

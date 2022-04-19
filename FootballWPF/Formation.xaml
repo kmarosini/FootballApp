@@ -17,7 +17,7 @@
                 </Rectangle.Fill>
             </Rectangle>
             
-            <Grid>
+            <Grid x:Name="Defender">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -37,7 +37,7 @@
                     <uc:Igrac Canvas.Left="30" Canvas.Bottom="80"/>
                 </Canvas>
             </Grid>
-            <Grid>
+            <Grid x:Name="Goalie">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -48,7 +48,7 @@
                     <uc:Igrac Canvas.Right="100" Canvas.Bottom="30"/>
                 </Canvas>
             </Grid>
-            <Grid>
+            <Grid x:Name="Midfield">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -68,7 +68,7 @@
                     <uc:Igrac Canvas.Left="30" Canvas.Bottom="150"/>
                 </Canvas>
             </Grid>
-            <Grid>
+            <Grid x:Name="Forward">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
@@ -76,7 +76,8 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Canvas Grid.Column="2">
-                    <uc:Igrac Canvas.Right="100" Canvas.Bottom="220"/>
+                    <uc:Igrac Canvas.Right="150" Canvas.Bottom="220"/>
+                    <uc:Igrac Canvas.Right="50" Canvas.Bottom="220"/>
                 </Canvas>
             </Grid>
             <Grid>
@@ -138,7 +139,8 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Canvas Grid.Column="2">
-                    <uc:Igrac Canvas.Right="100" Canvas.Bottom="450"/>
+                    <uc:Igrac Canvas.Right="150" Canvas.Bottom="450"/>
+                    <uc:Igrac Canvas.Right="50" Canvas.Bottom="450"/>
                 </Canvas>
             </Grid>
         </StackPanel>

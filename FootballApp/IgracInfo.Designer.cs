@@ -39,6 +39,10 @@
             this.lblFavorit = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbOdaberiIgraca = new System.Windows.Forms.CheckBox();
+            this.pbSlika = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSpremi = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -141,11 +145,40 @@
             this.cbOdaberiIgraca.UseVisualStyleBackColor = true;
             this.cbOdaberiIgraca.CheckedChanged += new System.EventHandler(this.cbOdaberiIgraca_CheckedChanged);
             // 
+            // pbSlika
+            // 
+            this.pbSlika.Location = new System.Drawing.Point(231, 12);
+            this.pbSlika.Name = "pbSlika";
+            this.pbSlika.Size = new System.Drawing.Size(100, 92);
+            this.pbSlika.TabIndex = 19;
+            this.pbSlika.TabStop = false;
+            this.pbSlika.DoubleClick += new System.EventHandler(this.pbSlika_DoubleClick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(196, 75);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(29, 20);
+            this.textBox1.TabIndex = 20;
+            // 
+            // btnSpremi
+            // 
+            this.btnSpremi.Location = new System.Drawing.Point(241, 110);
+            this.btnSpremi.Name = "btnSpremi";
+            this.btnSpremi.Size = new System.Drawing.Size(75, 23);
+            this.btnSpremi.TabIndex = 21;
+            this.btnSpremi.Text = "Spremi";
+            this.btnSpremi.UseVisualStyleBackColor = true;
+            this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
+            // 
             // IgracInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Brown;
+            this.Controls.Add(this.btnSpremi);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pbSlika);
             this.Controls.Add(this.cbOdaberiIgraca);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblFavorit);
@@ -158,8 +191,10 @@
             this.Controls.Add(this.lblPozicija);
             this.Controls.Add(this.lblIme);
             this.Name = "IgracInfo";
+            this.Size = new System.Drawing.Size(334, 150);
             this.Load += new System.EventHandler(this.IgracInfo_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.IgracInfo_MouseDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +213,8 @@
         private System.Windows.Forms.Label lblFavorit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox cbOdaberiIgraca;
+        private System.Windows.Forms.PictureBox pbSlika;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnSpremi;
     }
 }

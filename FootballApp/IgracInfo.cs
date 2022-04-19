@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,12 @@ namespace FootballApp
             this.lblPozicija.Text = igrac.Position;
             this.lblBroj.Text = igrac.Shirt_number.ToString();
             this.lblKapetan.Text = igrac.Captain ? "KAPETAN" : "NE";
+            this.textBox1.Visible = false;
+           
+            if (pbSlika.Image == null)
+            {
+                pbSlika.Image = Resursi.ikona;
+            }
         }
 
         private void IgracInfo_MouseDown(object sender, MouseEventArgs e)
@@ -54,6 +61,33 @@ namespace FootballApp
         {
             CheckBox checkBox = new CheckBox();
             checkBox.Checked = true;
+        }
+
+        private void PrikaziSliku()
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Text = open.FileName;
+                pbSlika.Image = new Bitmap(open.FileName);
+            }
+        }
+
+        private void pbSlika_DoubleClick(object sender, EventArgs e)
+        {
+            PrikaziSliku();
+        }
+
+        private void SpremiSlike()
+        {
+            File.Copy(textBox1.Text, Path.Combine(@"C:\Users\Korsnik\Desktop\OOP V2\KarloMarosini_FootballApp\FootballApp\MojiResursi\", Path.GetFileName(textBox1.Text)), true);
+            MessageBox.Show("Uspjesno spremljena slika!", "Notification");
+        }
+
+        private void btnSpremi_Click(object sender, EventArgs e)
+        {
+            SpremiSlike();
         }
     }
 }
