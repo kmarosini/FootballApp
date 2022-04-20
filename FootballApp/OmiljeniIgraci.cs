@@ -72,10 +72,5 @@ namespace FootballApp
             flpFavoritIgraci.Controls.Clear();
             ApiCollector.PrepareForForm.favourites.Clear();
         }
-
-        private void btnPrebaci_OnClick(object sender, EventArgs e)
-        {
-            // dodaj logiku za prebacivanje oznacenih igraca
-        }
     }
 }

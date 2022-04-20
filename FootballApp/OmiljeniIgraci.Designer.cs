@@ -34,7 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flpFavoritIgraci = new System.Windows.Forms.FlowLayoutPanel();
             this.flpSviIgraci = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnResetOmiljenihIgraca
@@ -68,18 +67,10 @@
             resources.ApplyResources(this.flpSviIgraci, "flpSviIgraci");
             this.flpSviIgraci.Name = "flpSviIgraci";
             // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnPrebaci_OnClick);
-            // 
             // OmiljeniIgraci
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnResetOmiljenihIgraca);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -100,6 +91,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flpFavoritIgraci;
         private System.Windows.Forms.FlowLayoutPanel flpSviIgraci;
-        private System.Windows.Forms.Button button1;
     }
 }
