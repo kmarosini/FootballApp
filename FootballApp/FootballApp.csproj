@@ -109,14 +109,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resursi.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GlavnaForma.en.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavnaForma.hr-HR.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GlavnaForma.resx">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IgracInfo.en.resx">
+      <DependentUpon>IgracInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IgracInfo.hr-HR.resx">
+      <DependentUpon>IgracInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IgracInfo.resx">
       <DependentUpon>IgracInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InformacijeOUtakmici.en.resx">
+      <DependentUpon>InformacijeOUtakmici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformacijeOUtakmici.hr-HR.resx">
+      <DependentUpon>InformacijeOUtakmici.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InformacijeOUtakmici.resx">
       <DependentUpon>InformacijeOUtakmici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JezikPrvenstvoForma.en.resx">
+      <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JezikPrvenstvoForma.hr-HR.resx">
+      <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JezikPrvenstvoForma.resx">
       <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
@@ -125,11 +149,29 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>MojiResursi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="OmiljeniIgraci.en.resx">
+      <DependentUpon>OmiljeniIgraci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OmiljeniIgraci.hr-HR.resx">
+      <DependentUpon>OmiljeniIgraci.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OmiljeniIgraci.resx">
       <DependentUpon>OmiljeniIgraci.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="OmiljeniTim.en.resx">
+      <DependentUpon>OmiljeniTim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OmiljeniTim.hr-HR.resx">
+      <DependentUpon>OmiljeniTim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="OmiljeniTim.resx">
       <DependentUpon>OmiljeniTim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.en.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Postavke.hr-HR.resx">
+      <DependentUpon>Postavke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Postavke.resx">
       <DependentUpon>Postavke.cs</DependentUpon>
@@ -143,6 +185,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RangLista.en.resx">
+      <DependentUpon>RangLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RangLista.hr-HR.resx">
+      <DependentUpon>RangLista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RangLista.resx">
       <DependentUpon>RangLista.cs</DependentUpon>
     </EmbeddedResource>

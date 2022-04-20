@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangLista));
             this.dgvRangLista = new System.Windows.Forms.DataGridView();
+            this.btnRangListPrint = new System.Windows.Forms.Button();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.captainDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.shirtnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,13 +40,13 @@
             this.yellowCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isFavouriteDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.skupIgracaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btnRangListPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRangLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvRangLista
             // 
+            resources.ApplyResources(this.dgvRangLista, "dgvRangLista");
             this.dgvRangLista.AutoGenerateColumns = false;
             this.dgvRangLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRangLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -56,77 +58,69 @@
             this.yellowCardDataGridViewTextBoxColumn,
             this.isFavouriteDataGridViewCheckBoxColumn});
             this.dgvRangLista.DataSource = this.skupIgracaBindingSource;
-            this.dgvRangLista.Location = new System.Drawing.Point(8, 59);
             this.dgvRangLista.Name = "dgvRangLista";
-            this.dgvRangLista.Size = new System.Drawing.Size(785, 333);
-            this.dgvRangLista.TabIndex = 1;
+            // 
+            // btnRangListPrint
+            // 
+            resources.ApplyResources(this.btnRangListPrint, "btnRangListPrint");
+            this.btnRangListPrint.Name = "btnRangListPrint";
+            this.btnRangListPrint.UseVisualStyleBackColor = true;
+            this.btnRangListPrint.Click += new System.EventHandler(this.btnRangListPrint_Click);
             // 
             // nameDataGridViewTextBoxColumn
             // 
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // captainDataGridViewCheckBoxColumn
             // 
             this.captainDataGridViewCheckBoxColumn.DataPropertyName = "Captain";
-            this.captainDataGridViewCheckBoxColumn.HeaderText = "Captain";
+            resources.ApplyResources(this.captainDataGridViewCheckBoxColumn, "captainDataGridViewCheckBoxColumn");
             this.captainDataGridViewCheckBoxColumn.Name = "captainDataGridViewCheckBoxColumn";
             // 
             // shirtnumberDataGridViewTextBoxColumn
             // 
             this.shirtnumberDataGridViewTextBoxColumn.DataPropertyName = "Shirt_number";
-            this.shirtnumberDataGridViewTextBoxColumn.HeaderText = "Shirt_number";
+            resources.ApplyResources(this.shirtnumberDataGridViewTextBoxColumn, "shirtnumberDataGridViewTextBoxColumn");
             this.shirtnumberDataGridViewTextBoxColumn.Name = "shirtnumberDataGridViewTextBoxColumn";
             // 
             // positionDataGridViewTextBoxColumn
             // 
             this.positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
-            this.positionDataGridViewTextBoxColumn.HeaderText = "Position";
+            resources.ApplyResources(this.positionDataGridViewTextBoxColumn, "positionDataGridViewTextBoxColumn");
             this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
             // 
             // goalNumberDataGridViewTextBoxColumn
             // 
             this.goalNumberDataGridViewTextBoxColumn.DataPropertyName = "GoalNumber";
-            this.goalNumberDataGridViewTextBoxColumn.HeaderText = "GoalNumber";
+            resources.ApplyResources(this.goalNumberDataGridViewTextBoxColumn, "goalNumberDataGridViewTextBoxColumn");
             this.goalNumberDataGridViewTextBoxColumn.Name = "goalNumberDataGridViewTextBoxColumn";
             // 
             // yellowCardDataGridViewTextBoxColumn
             // 
             this.yellowCardDataGridViewTextBoxColumn.DataPropertyName = "YellowCard";
-            this.yellowCardDataGridViewTextBoxColumn.HeaderText = "YellowCard";
+            resources.ApplyResources(this.yellowCardDataGridViewTextBoxColumn, "yellowCardDataGridViewTextBoxColumn");
             this.yellowCardDataGridViewTextBoxColumn.Name = "yellowCardDataGridViewTextBoxColumn";
             // 
             // isFavouriteDataGridViewCheckBoxColumn
             // 
             this.isFavouriteDataGridViewCheckBoxColumn.DataPropertyName = "IsFavourite";
-            this.isFavouriteDataGridViewCheckBoxColumn.HeaderText = "IsFavourite";
+            resources.ApplyResources(this.isFavouriteDataGridViewCheckBoxColumn, "isFavouriteDataGridViewCheckBoxColumn");
             this.isFavouriteDataGridViewCheckBoxColumn.Name = "isFavouriteDataGridViewCheckBoxColumn";
             // 
             // skupIgracaBindingSource
             // 
             this.skupIgracaBindingSource.DataSource = typeof(ApiCollector.SkupIgraca);
             // 
-            // btnRangListPrint
-            // 
-            this.btnRangListPrint.Location = new System.Drawing.Point(315, 12);
-            this.btnRangListPrint.Name = "btnRangListPrint";
-            this.btnRangListPrint.Size = new System.Drawing.Size(127, 28);
-            this.btnRangListPrint.TabIndex = 4;
-            this.btnRangListPrint.Text = "Print";
-            this.btnRangListPrint.UseVisualStyleBackColor = true;
-            this.btnRangListPrint.Click += new System.EventHandler(this.btnRangListPrint_Click);
-            // 
             // RangLista
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRangListPrint);
             this.Controls.Add(this.dgvRangLista);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RangLista";
-            this.Text = "RangLista";
             this.Load += new System.EventHandler(this.RangLista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRangLista)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).EndInit();
@@ -137,6 +131,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvRangLista;
+        private System.Windows.Forms.BindingSource skupIgracaBindingSource;
+        private System.Windows.Forms.Button btnRangListPrint;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn captainDataGridViewCheckBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn shirtnumberDataGridViewTextBoxColumn;
@@ -144,7 +140,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn goalNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yellowCardDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isFavouriteDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.BindingSource skupIgracaBindingSource;
-        private System.Windows.Forms.Button btnRangListPrint;
     }
 }

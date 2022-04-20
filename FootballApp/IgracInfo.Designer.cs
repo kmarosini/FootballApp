@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IgracInfo));
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,142 +40,91 @@
             this.lblFavorit = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbOdaberiIgraca = new System.Windows.Forms.CheckBox();
-            this.pbSlika = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSpremi = new System.Windows.Forms.Button();
+            this.pbSlika = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 105);
+            resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Kapetan:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 82);
+            resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Broj:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 59);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Pozicija:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 34);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(27, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Ime:";
             // 
             // lblKapetan
             // 
-            this.lblKapetan.AutoSize = true;
-            this.lblKapetan.Location = new System.Drawing.Point(71, 105);
+            resources.ApplyResources(this.lblKapetan, "lblKapetan");
             this.lblKapetan.Name = "lblKapetan";
-            this.lblKapetan.Size = new System.Drawing.Size(35, 13);
-            this.lblKapetan.TabIndex = 11;
-            this.lblKapetan.Text = "label3";
             // 
             // lblBroj
             // 
-            this.lblBroj.AutoSize = true;
-            this.lblBroj.Location = new System.Drawing.Point(71, 82);
+            resources.ApplyResources(this.lblBroj, "lblBroj");
             this.lblBroj.Name = "lblBroj";
-            this.lblBroj.Size = new System.Drawing.Size(35, 13);
-            this.lblBroj.TabIndex = 10;
-            this.lblBroj.Text = "label2";
             // 
             // lblPozicija
             // 
-            this.lblPozicija.AutoSize = true;
-            this.lblPozicija.Location = new System.Drawing.Point(71, 59);
+            resources.ApplyResources(this.lblPozicija, "lblPozicija");
             this.lblPozicija.Name = "lblPozicija";
-            this.lblPozicija.Size = new System.Drawing.Size(35, 13);
-            this.lblPozicija.TabIndex = 9;
-            this.lblPozicija.Text = "label1";
             // 
             // lblIme
             // 
-            this.lblIme.AutoSize = true;
-            this.lblIme.Location = new System.Drawing.Point(71, 34);
+            resources.ApplyResources(this.lblIme, "lblIme");
             this.lblIme.Name = "lblIme";
-            this.lblIme.Size = new System.Drawing.Size(35, 13);
-            this.lblIme.TabIndex = 8;
-            this.lblIme.Text = "label1";
             // 
             // lblFavorit
             // 
-            this.lblFavorit.AutoSize = true;
-            this.lblFavorit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFavorit.Location = new System.Drawing.Point(127, 12);
+            resources.ApplyResources(this.lblFavorit, "lblFavorit");
             this.lblFavorit.Name = "lblFavorit";
-            this.lblFavorit.Size = new System.Drawing.Size(0, 25);
-            this.lblFavorit.TabIndex = 16;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 134);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "ODABERI:";
             // 
             // cbOdaberiIgraca
             // 
-            this.cbOdaberiIgraca.AutoSize = true;
-            this.cbOdaberiIgraca.Location = new System.Drawing.Point(74, 132);
+            resources.ApplyResources(this.cbOdaberiIgraca, "cbOdaberiIgraca");
             this.cbOdaberiIgraca.Name = "cbOdaberiIgraca";
-            this.cbOdaberiIgraca.Size = new System.Drawing.Size(15, 14);
-            this.cbOdaberiIgraca.TabIndex = 18;
             this.cbOdaberiIgraca.UseVisualStyleBackColor = true;
             this.cbOdaberiIgraca.CheckedChanged += new System.EventHandler(this.cbOdaberiIgraca_CheckedChanged);
             // 
-            // pbSlika
-            // 
-            this.pbSlika.Location = new System.Drawing.Point(231, 12);
-            this.pbSlika.Name = "pbSlika";
-            this.pbSlika.Size = new System.Drawing.Size(100, 92);
-            this.pbSlika.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSlika.TabIndex = 19;
-            this.pbSlika.TabStop = false;
-            this.pbSlika.DoubleClick += new System.EventHandler(this.pbSlika_DoubleClick);
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(196, 75);
+            resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(29, 20);
-            this.textBox1.TabIndex = 20;
             // 
             // btnSpremi
             // 
-            this.btnSpremi.Location = new System.Drawing.Point(241, 110);
+            resources.ApplyResources(this.btnSpremi, "btnSpremi");
             this.btnSpremi.Name = "btnSpremi";
-            this.btnSpremi.Size = new System.Drawing.Size(75, 23);
-            this.btnSpremi.TabIndex = 21;
-            this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
             this.btnSpremi.Click += new System.EventHandler(this.btnSpremi_Click);
             // 
+            // pbSlika
+            // 
+            resources.ApplyResources(this.pbSlika, "pbSlika");
+            this.pbSlika.Name = "pbSlika";
+            this.pbSlika.TabStop = false;
+            this.pbSlika.DoubleClick += new System.EventHandler(this.pbSlika_DoubleClick);
+            // 
             // IgracInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Brown;
             this.Controls.Add(this.btnSpremi);
@@ -192,7 +142,6 @@
             this.Controls.Add(this.lblPozicija);
             this.Controls.Add(this.lblIme);
             this.Name = "IgracInfo";
-            this.Size = new System.Drawing.Size(334, 150);
             this.Load += new System.EventHandler(this.IgracInfo_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.IgracInfo_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbSlika)).EndInit();

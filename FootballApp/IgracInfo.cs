@@ -82,6 +82,7 @@ namespace FootballApp
         private void SpremiSlike()
         {
             File.Copy(textBox1.Text, Path.Combine(@"C:\Users\programer10\Desktop\Karlo\FootballApp\MojiResursi\", Path.GetFileName(textBox1.Text)), true);
+    
             MessageBox.Show("Uspjesno spremljena slika!", "Notification");
         }
 

@@ -117,7 +117,144 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;shirtnumberDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>shirtnumberDataGridViewTextBoxColumn</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="captainDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Captain</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dgvRangLista.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="positionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="&gt;&gt;dgvRangLista.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;isFavouriteDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>isFavouriteDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;shirtnumberDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;positionDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="btnRangListPrint.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;btnRangListPrint.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnRangListPrint.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>RangLista</value>
+  </data>
+  <data name="btnRangListPrint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 28</value>
+  </data>
+  <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="&gt;&gt;dgvRangLista.Name" xml:space="preserve">
+    <value>dgvRangLista</value>
+  </data>
+  <data name="&gt;&gt;dgvRangLista.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;skupIgracaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRangListPrint.Name" xml:space="preserve">
+    <value>btnRangListPrint</value>
+  </data>
+  <data name="&gt;&gt;captainDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>captainDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="btnRangListPrint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>315, 12</value>
+  </data>
+  <data name="&gt;&gt;btnRangListPrint.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="goalNumberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>GoalNumber</value>
+  </data>
+  <data name="dgvRangLista.Size" type="System.Drawing.Size, System.Drawing">
+    <value>785, 333</value>
+  </data>
+  <data name="isFavouriteDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>IsFavourite</value>
+  </data>
+  <data name="&gt;&gt;isFavouriteDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;positionDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>positionDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="yellowCardDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>YellowCard</value>
+  </data>
+  <data name="&gt;&gt;yellowCardDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>yellowCardDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RangLista</value>
+  </data>
+  <data name="&gt;&gt;nameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;goalNumberDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yellowCardDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dgvRangLista.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 59</value>
+  </data>
+  <data name="&gt;&gt;goalNumberDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>goalNumberDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;skupIgracaBindingSource.Name" xml:space="preserve">
+    <value>skupIgracaBindingSource</value>
+  </data>
+  <data name="&gt;&gt;captainDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvRangLista.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRangListPrint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="shirtnumberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Shirt_number</value>
+  </data>
   <metadata name="skupIgracaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>hr-HR</value>
   </metadata>
 </root>

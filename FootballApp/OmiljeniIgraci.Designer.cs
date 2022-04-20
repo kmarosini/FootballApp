@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OmiljeniIgraci));
             this.btnResetOmiljenihIgraca = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -38,69 +39,46 @@
             // 
             // btnResetOmiljenihIgraca
             // 
+            resources.ApplyResources(this.btnResetOmiljenihIgraca, "btnResetOmiljenihIgraca");
             this.btnResetOmiljenihIgraca.BackColor = System.Drawing.Color.Firebrick;
-            this.btnResetOmiljenihIgraca.Location = new System.Drawing.Point(416, 39);
             this.btnResetOmiljenihIgraca.Name = "btnResetOmiljenihIgraca";
-            this.btnResetOmiljenihIgraca.Size = new System.Drawing.Size(75, 23);
-            this.btnResetOmiljenihIgraca.TabIndex = 11;
-            this.btnResetOmiljenihIgraca.Text = "Reset";
             this.btnResetOmiljenihIgraca.UseVisualStyleBackColor = false;
             this.btnResetOmiljenihIgraca.Click += new System.EventHandler(this.btnResetOmiljenihIgraca_Click);
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(674, 46);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 16);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Omiljeni igraci:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 52);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 16);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Igraci:";
             // 
             // flpFavoritIgraci
             // 
+            resources.ApplyResources(this.flpFavoritIgraci, "flpFavoritIgraci");
             this.flpFavoritIgraci.AllowDrop = true;
-            this.flpFavoritIgraci.AutoScroll = true;
-            this.flpFavoritIgraci.Location = new System.Drawing.Point(406, 68);
             this.flpFavoritIgraci.Name = "flpFavoritIgraci";
-            this.flpFavoritIgraci.Size = new System.Drawing.Size(378, 341);
-            this.flpFavoritIgraci.TabIndex = 8;
             this.flpFavoritIgraci.DragDrop += new System.Windows.Forms.DragEventHandler(this.flpFavoritIgraci_DragDrop);
             this.flpFavoritIgraci.DragEnter += new System.Windows.Forms.DragEventHandler(this.flpFavoritIgraci_DragEnter);
             // 
             // flpSviIgraci
             // 
-            this.flpSviIgraci.AutoScroll = true;
-            this.flpSviIgraci.Location = new System.Drawing.Point(17, 68);
+            resources.ApplyResources(this.flpSviIgraci, "flpSviIgraci");
             this.flpSviIgraci.Name = "flpSviIgraci";
-            this.flpSviIgraci.Size = new System.Drawing.Size(383, 341);
-            this.flpSviIgraci.TabIndex = 7;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(310, 39);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = ">";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnPrebaci_OnClick);
             // 
             // OmiljeniIgraci
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnResetOmiljenihIgraca);
             this.Controls.Add(this.label2);
@@ -109,7 +87,6 @@
             this.Controls.Add(this.flpSviIgraci);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OmiljeniIgraci";
-            this.Text = "OmiljeniIgraci";
             this.Load += new System.EventHandler(this.OmiljeniIgraci_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
