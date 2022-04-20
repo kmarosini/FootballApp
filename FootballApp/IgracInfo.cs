@@ -16,6 +16,7 @@ namespace FootballApp
     {
         private SkupIgraca igrac;
         public bool Checked { get; set; }
+
         public IgracInfo(SkupIgraca igrac)
         {
             InitializeComponent();
@@ -59,8 +60,7 @@ namespace FootballApp
         // postavljanje checkbox value-a
         private void cbOdaberiIgraca_CheckedChanged(object sender, EventArgs e)
         {
-            CheckBox checkBox = new CheckBox();
-            checkBox.Checked = true;
+            Checked = cbOdaberiIgraca.Checked;
         }
 
         private void PrikaziSliku()

@@ -13,6 +13,7 @@ namespace FootballApp
 {
     public partial class OmiljeniIgraci : Form
     {
+         
         public OmiljeniIgraci()
         {
             InitializeComponent();
@@ -39,6 +40,7 @@ namespace FootballApp
         {
             Control.ControlCollection ctrlCollection = this.flpFavoritIgraci.Controls;
             int count = ctrlCollection.Count;
+            List<IgracInfo> list = new List<IgracInfo>();
 
             if (count >= 3)
             {
@@ -47,7 +49,29 @@ namespace FootballApp
             }
 
             IgracInfo igrc = (IgracInfo)e.Data.GetData(typeof(IgracInfo));
+
             this.flpFavoritIgraci.Controls.Add(igrc);
+
+            foreach (IgracInfo item in flpSviIgraci.Controls)
+            {
+
+                if (count <= 3)
+                {
+                    if (item.Checked == true)
+                    {
+                        list.Add(item);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("gubica");
+                }
+            }
+           
+
+            list.ForEach(item => this.flpFavoritIgraci.Controls.Add((IgracInfo)item));
+
+
 
             // deserializacija string -> objekt
             // serijalizacija objekt -> string
