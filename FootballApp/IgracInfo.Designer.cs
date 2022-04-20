@@ -150,6 +150,7 @@
             this.pbSlika.Location = new System.Drawing.Point(231, 12);
             this.pbSlika.Name = "pbSlika";
             this.pbSlika.Size = new System.Drawing.Size(100, 92);
+            this.pbSlika.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSlika.TabIndex = 19;
             this.pbSlika.TabStop = false;
             this.pbSlika.DoubleClick += new System.EventHandler(this.pbSlika_DoubleClick);
