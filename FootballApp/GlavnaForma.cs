@@ -16,8 +16,7 @@ namespace FootballApp
         public GlavnaForma()
         {
             InitializeComponent();
-            SaverLoader.NapraviOmiljeniIgraciFile();
-            SaverLoader.LoadFavoritIgrace();
+            
             if (!SaverLoader.CreateFile())
             {
                 pnlGlavniPanel.Controls.Clear();
@@ -28,6 +27,8 @@ namespace FootballApp
                 pnlGlavniPanel.Controls.Clear();
                 PrikaziFormuUPanelu(new OmiljeniTim());
             }
+            SaverLoader.NapraviOmiljeniIgraciFile();
+            SaverLoader.LoadFavoritIgrace();
         }
 
         public void PrikaziFormuUPanelu(Form forma)
