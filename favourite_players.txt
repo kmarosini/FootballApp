@@ -1,1 +1,1 @@
-[{"Name":"Hugo LLORIS","Captain":true,"Shirt_number":1,"Position":"Goalie","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Raphael VARANE","Captain":false,"Shirt_number":4,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Benjamin PAVARD","Captain":false,"Shirt_number":2,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false}]
+[]

@@ -13,7 +13,9 @@ namespace FootballApp
 {
     public partial class OmiljeniIgraci : Form
     {
-         
+
+        public int counter = 0;
+
         public OmiljeniIgraci()
         {
             InitializeComponent();
@@ -55,7 +57,7 @@ namespace FootballApp
             foreach (IgracInfo item in flpSviIgraci.Controls)
             {
 
-                if (count <= 3)
+                if (count < 3)
                 {
                     if (item.Checked == true)
                     {
@@ -67,6 +69,8 @@ namespace FootballApp
                     MessageBox.Show("gubica");
                 }
             }
+
+
            
 
             list.ForEach(item => this.flpFavoritIgraci.Controls.Add((IgracInfo)item));

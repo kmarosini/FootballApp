@@ -121,15 +121,8 @@
   <data name="btnPostavke.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
   </data>
-  <data name="btnOmiljeniIgraci.Text" xml:space="preserve">
-    <value>Omiljeni igraci</value>
-  </data>
   <data name="&gt;&gt;btnDetalji.Name" xml:space="preserve">
     <value>btnDetalji</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btnPostavke.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
@@ -143,26 +136,33 @@
   <data name="btnOmiljeniTim.Text" xml:space="preserve">
     <value>Omiljeni tim</value>
   </data>
+  <data name="&gt;&gt;btnPostavke.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;btnDetalji.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="btnPostavke.Text" xml:space="preserve">
     <value>Postavke</value>
   </data>
+  <data name="&gt;&gt;btnOmiljeniIgraci.Name" xml:space="preserve">
+    <value>btnOmiljeniIgraci</value>
+  </data>
   <data name="&gt;&gt;btnRangLista.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnOmiljeniIgraci.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="btnPostavke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>683, 404</value>
+  <data name="btnJezikPrvenstvo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 34</value>
   </data>
   <data name="&gt;&gt;btnRangLista.Name" xml:space="preserve">
     <value>btnRangLista</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;btnOmiljeniTim.Name" xml:space="preserve">
+    <value>btnOmiljeniTim</value>
   </data>
   <data name="btnOmiljeniTim.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -188,8 +188,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>GlavnaForma</value>
   </data>
-  <data name="btnJezikPrvenstvo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 34</value>
+  <data name="btnPostavke.Location" type="System.Drawing.Point, System.Drawing">
+    <value>683, 404</value>
   </data>
   <data name="btnJezikPrvenstvo.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -199,9 +199,6 @@
   </data>
   <data name="btnOmiljeniIgraci.Location" type="System.Drawing.Point, System.Drawing">
     <value>286, 404</value>
-  </data>
-  <data name="&gt;&gt;btnOmiljeniTim.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="btnDetalji.Text" xml:space="preserve">
     <value>Detalji</value>
@@ -221,8 +218,8 @@
   <data name="&gt;&gt;pnlGlavniPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;btnPostavke.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="&gt;&gt;btnJezikPrvenstvo.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -245,20 +242,23 @@
   <data name="&gt;&gt;btnOmiljeniTim.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnOmiljeniTim.Name" xml:space="preserve">
-    <value>btnOmiljeniTim</value>
+  <data name="&gt;&gt;btnJezikPrvenstvo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="btnOmiljeniIgraci.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
   </data>
-  <data name="&gt;&gt;btnDetalji.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;btnOmiljeniTim.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;btnJezikPrvenstvo.Name" xml:space="preserve">
-    <value>btnJezikPrvenstvo</value>
+  <data name="btnOmiljeniIgraci.Text" xml:space="preserve">
+    <value>Omiljeni igraci</value>
   </data>
   <data name="btnJezikPrvenstvo.Location" type="System.Drawing.Point, System.Drawing">
     <value>16, 404</value>
+  </data>
+  <data name="&gt;&gt;btnDetalji.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnRangLista.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -266,8 +266,8 @@
   <data name="btnDetalji.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;btnJezikPrvenstvo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btnRangLista.Text" xml:space="preserve">
+    <value>Rang lista</value>
   </data>
   <data name="&gt;&gt;btnRangLista.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -278,11 +278,11 @@
   <data name="&gt;&gt;btnOmiljeniIgraci.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnOmiljeniIgraci.Name" xml:space="preserve">
-    <value>btnOmiljeniIgraci</value>
+  <data name="&gt;&gt;btnJezikPrvenstvo.Name" xml:space="preserve">
+    <value>btnJezikPrvenstvo</value>
   </data>
-  <data name="btnRangLista.Text" xml:space="preserve">
-    <value>Rang lista</value>
+  <data name="btnPostavke.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="btnDetalji.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
