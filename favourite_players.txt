@@ -1,1 +1,1 @@
-[]
+[{"Name":"Ghanem SAISS","Captain":false,"Shirt_number":6,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Monir EL KAJOUI","Captain":false,"Shirt_number":12,"Position":"Goalie","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Achraf HAKIMI","Captain":false,"Shirt_number":2,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false}]

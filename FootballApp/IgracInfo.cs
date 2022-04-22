@@ -60,7 +60,16 @@ namespace FootballApp
         // postavljanje checkbox value-a
         private void cbOdaberiIgraca_CheckedChanged(object sender, EventArgs e)
         {
-            Checked = cbOdaberiIgraca.Checked;
+            if (OmiljeniIgraci.counter < 3)
+            {
+                Checked = cbOdaberiIgraca.Checked;
+                OmiljeniIgraci.counter++;
+            }
+            else
+            {
+                cbOdaberiIgraca.Checked = false;
+                return;     
+            }   
         }
 
         private void PrikaziSliku()

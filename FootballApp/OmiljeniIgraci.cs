@@ -14,7 +14,7 @@ namespace FootballApp
     public partial class OmiljeniIgraci : Form
     {
 
-        public int counter = 0;
+        public static int counter = 0;
 
         public OmiljeniIgraci()
         {
@@ -54,35 +54,25 @@ namespace FootballApp
 
             this.flpFavoritIgraci.Controls.Add(igrc);
 
+
+            //Izbaci duplikata iz liste
+
             foreach (IgracInfo item in flpSviIgraci.Controls)
             {
-
-                if (count < 3)
-                {
+               
                     if (item.Checked == true)
                     {
                         list.Add(item);
                     }
-                }
-                else
-                {
-                    MessageBox.Show("gubica");
-                }
+               
             }
 
-
-           
 
             list.ForEach(item => this.flpFavoritIgraci.Controls.Add((IgracInfo)item));
 
 
-
-            // deserializacija string -> objekt
-            // serijalizacija objekt -> string
-
-            // svi koji su dragndropani markiraj ih sa zvjezdom
             ApiCollector.PrepareForForm.favourites.Clear();
-
+                
             foreach (IgracInfo c in this.flpFavoritIgraci.Controls)
             {
                 c.setFavourite();
@@ -99,6 +89,7 @@ namespace FootballApp
         {
             flpFavoritIgraci.Controls.Clear();
             ApiCollector.PrepareForForm.favourites.Clear();
+            OmiljeniIgraci.counter = 0;
         }
     }
 }
