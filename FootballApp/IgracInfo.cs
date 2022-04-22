@@ -37,16 +37,29 @@ namespace FootballApp
 
         private void IgracInfo_Load(object sender, EventArgs e)
         {
+            
+
             this.lblIme.Text = igrac.Name;
             this.lblPozicija.Text = igrac.Position;
             this.lblBroj.Text = igrac.Shirt_number.ToString();
             this.lblKapetan.Text = igrac.Captain ? "KAPETAN" : "NE";
             this.textBox1.Visible = false;
-           
-            if (pbSlika.Image == null)
+            string picPath = $@"C:\Users\Korsnik\Desktop\OOP V2\KarloMarosini_FootballApp\FootballApp\MojiResursi\{igrac.Name}.jpg";
+
+            if (File.Exists(picPath))
+            {
+                pbSlika.Image = Image.FromFile(picPath);
+            }
+            else
             {
                 pbSlika.Image = Resursi.ikona;
             }
+
+           
+            //if (pbSlika.Image == null)
+            //{
+            //    pbSlika.Image = Resursi.ikona;
+            //}
         }
 
         private void IgracInfo_MouseDown(object sender, MouseEventArgs e)
@@ -90,9 +103,17 @@ namespace FootballApp
 
         private void SpremiSlike()
         {
-            File.Copy(textBox1.Text, Path.Combine(@"C:\Users\programer10\Desktop\Karlo\FootballApp\MojiResursi\", Path.GetFileName(textBox1.Text)), true);
-    
-            MessageBox.Show("Uspjesno spremljena slika!", "Notification");
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "*.jpg; *.jpeg; *.gif; *.bmp)| *.jpg; *.jpeg; *.gif; *.bmp";
+            save.FileName = igrac.Name;
+            save.DefaultExt = "*.jpg";
+            save.InitialDirectory = @"C:\Users\Korsnik\Desktop\OOP V2\KarloMarosini_FootballApp\FootballApp\MojiResursi\";
+
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                pbSlika.Image.Save(save.FileName);
+                MessageBox.Show("Uspjesno spremljena slika!", "Notification");
+            }
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)

@@ -85,7 +85,6 @@ namespace ApiCollector
             public int clearances { get; set; }
             public int yellow_cards { get; set; }
             public int red_cards { get; set; }
-            public int fouls_committed { get; set; }
             public string tactics { get; set; }
             public List<StartingEleven> starting_eleven { get; set; }
             public List<Substitute> substitutes { get; set; }
@@ -109,7 +108,6 @@ namespace ApiCollector
             public int clearances { get; set; }
             public int yellow_cards { get; set; }
             public int red_cards { get; set; }
-            public int fouls_committed { get; set; }
             public string tactics { get; set; }
             public List<StartingEleven> starting_eleven { get; set; }
             public List<Substitute> substitutes { get; set; }

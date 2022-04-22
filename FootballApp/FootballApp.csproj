@@ -73,11 +73,6 @@
     <Compile Include="JezikPrvenstvoForma.Designer.cs">
       <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
     </Compile>
-    <Compile Include="MojiResursi.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MojiResursi.resx</DependentUpon>
-    </Compile>
     <Compile Include="OmiljeniIgraci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,10 +139,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JezikPrvenstvoForma.resx">
       <DependentUpon>JezikPrvenstvoForma.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MojiResursi.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>MojiResursi.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="OmiljeniIgraci.en.resx">
       <DependentUpon>OmiljeniIgraci.cs</DependentUpon>

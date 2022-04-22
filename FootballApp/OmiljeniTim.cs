@@ -34,6 +34,20 @@ namespace FootballApp
             
 
             MessageBox.Show("Omiljeni tim je spremljen!");
+
+            RefreshUserInterface();
+        }
+
+        private void RefreshUserInterface()
+        {
+            this.Controls.Clear();
+            InitializeComponent();
+            OmiljeniTimIspis();
+        }
+
+        private void OmiljeniTimIspis()
+        {
+            this.lblIzabraniTim.Text = SaverLoader.tim.Fifa_code.ToString();
         }
     }
 }
