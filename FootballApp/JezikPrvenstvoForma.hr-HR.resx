@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="btnSpremi.Text" xml:space="preserve">
-    <value>Spremi / spremi</value>
+    <value>Spremi </value>
   </data>
 </root>
