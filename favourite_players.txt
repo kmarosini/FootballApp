@@ -1,1 +1,1 @@
-[{"Name":"Wilfredo CABALLERO","Captain":false,"Shirt_number":23,"Position":"Goalie","GoalNumber":0,"YellowCard":0,"IsFavourite":false},{"Name":"Nicolas TAGLIAFICO","Captain":false,"Shirt_number":3,"Position":"Defender","GoalNumber":0,"YellowCard":0,"IsFavourite":false}]
+[]
