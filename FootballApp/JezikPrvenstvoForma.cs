@@ -25,5 +25,11 @@ namespace FootballApp
 
             MessageBox.Show("Jezik i prvenstvo su spremljeni!");
         }
+
+        private void JezikPrvenstvoForma_Load(object sender, EventArgs e)
+        {
+            this.lblIzabranoPrvenstvo.Text = SaverLoader.Prvenstvo;
+            this.lblIzabraniJezik.Text = SaverLoader.Jezik;
+        }
     }
 }

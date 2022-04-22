@@ -130,4 +130,10 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Favourite team:</value>
   </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>CHOOSEN TEAM:</value>
+  </data>
 </root>

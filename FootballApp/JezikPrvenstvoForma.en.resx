@@ -139,4 +139,19 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Championship:</value>
   </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>CHOOSEN CHAMPIONSHIP:</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>555, 258</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>CHOOSEN LANGUAGE:</value>
+  </data>
 </root>

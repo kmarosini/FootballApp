@@ -34,6 +34,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbJezik = new System.Windows.Forms.ComboBox();
             this.cbPrvenstvo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblIzabranoPrvenstvo = new System.Windows.Forms.Label();
+            this.lblIzabraniJezik = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSpremi
@@ -72,10 +76,34 @@
             resources.GetString("cbPrvenstvo.Items1")});
             this.cbPrvenstvo.Name = "cbPrvenstvo";
             // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // lblIzabranoPrvenstvo
+            // 
+            resources.ApplyResources(this.lblIzabranoPrvenstvo, "lblIzabranoPrvenstvo");
+            this.lblIzabranoPrvenstvo.Name = "lblIzabranoPrvenstvo";
+            // 
+            // lblIzabraniJezik
+            // 
+            resources.ApplyResources(this.lblIzabraniJezik, "lblIzabraniJezik");
+            this.lblIzabraniJezik.Name = "lblIzabraniJezik";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
+            // 
             // JezikPrvenstvoForma
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblIzabraniJezik);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblIzabranoPrvenstvo);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -83,6 +111,7 @@
             this.Controls.Add(this.cbPrvenstvo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "JezikPrvenstvoForma";
+            this.Load += new System.EventHandler(this.JezikPrvenstvoForma_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -95,5 +124,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbJezik;
         private System.Windows.Forms.ComboBox cbPrvenstvo;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblIzabranoPrvenstvo;
+        private System.Windows.Forms.Label lblIzabraniJezik;
+        private System.Windows.Forms.Label label6;
     }
 }

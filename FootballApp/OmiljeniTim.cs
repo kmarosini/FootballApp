@@ -23,6 +23,7 @@ namespace FootballApp
         {
             List<ApiCollector.Tim> list = await Collector.DohvatiMuskoPrvenstvo();
             cbOmiljeniTim.DataSource = list;
+            lblIzabraniTim.Text = SaverLoader.tim.Fifa_code;
         }
 
         private void btnSpremiOmiljeniTim_Click(object sender, EventArgs e)

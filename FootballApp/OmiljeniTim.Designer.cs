@@ -32,6 +32,8 @@
             this.btnSpremiOmiljeniTim = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbOmiljeniTim = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblIzabraniTim = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSpremiOmiljeniTim
@@ -53,10 +55,23 @@
             this.cbOmiljeniTim.FormattingEnabled = true;
             this.cbOmiljeniTim.Name = "cbOmiljeniTim";
             // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.label2.Name = "label2";
+            // 
+            // lblIzabraniTim
+            // 
+            resources.ApplyResources(this.lblIzabraniTim, "lblIzabraniTim");
+            this.lblIzabraniTim.Name = "lblIzabraniTim";
+            // 
             // OmiljeniTim
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblIzabraniTim);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSpremiOmiljeniTim);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbOmiljeniTim);
@@ -73,5 +88,7 @@
         private System.Windows.Forms.Button btnSpremiOmiljeniTim;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbOmiljeniTim;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblIzabraniTim;
     }
 }
