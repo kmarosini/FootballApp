@@ -22,11 +22,40 @@ namespace FootballApp
         {
             SaverLoader.Jezik = cbJezik.GetItemText(this.cbJezik.SelectedItem);
             SaverLoader.Prvenstvo = cbPrvenstvo.GetItemText(this.cbPrvenstvo.SelectedItem);
+            ChangeLanguage(cbJezik.GetItemText(this.cbJezik.SelectedItem));
 
             MessageBox.Show("Jezik i prvenstvo su spremljeni!");
         }
 
+        private void ChangeLanguage(string selectedItem)
+        {
+            if (selectedItem == "Hrvatski")
+            {
+                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("hr-HR");
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("hr-HR");
+            }
+            else
+            {
+                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+                System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            }
+
+            RefreshUserInterface();
+        }
+
+        private void RefreshUserInterface()
+        {
+            this.Controls.Clear();
+            InitializeComponent();
+            JezikPrvenstvo();
+        }
+
         private void JezikPrvenstvoForma_Load(object sender, EventArgs e)
+        {
+            JezikPrvenstvo();
+        }
+
+        private void JezikPrvenstvo()
         {
             this.lblIzabranoPrvenstvo.Text = SaverLoader.Prvenstvo;
             this.lblIzabraniJezik.Text = SaverLoader.Jezik;
