@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangLista));
             this.dgvRangLista = new System.Windows.Forms.DataGridView();
-            this.btnRangListPrint = new System.Windows.Forms.Button();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.captainDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.shirtnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +39,7 @@
             this.yellowCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.isFavouriteDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.skupIgracaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnRangListPrint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRangLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -59,13 +59,6 @@
             this.isFavouriteDataGridViewCheckBoxColumn});
             this.dgvRangLista.DataSource = this.skupIgracaBindingSource;
             this.dgvRangLista.Name = "dgvRangLista";
-            // 
-            // btnRangListPrint
-            // 
-            resources.ApplyResources(this.btnRangListPrint, "btnRangListPrint");
-            this.btnRangListPrint.Name = "btnRangListPrint";
-            this.btnRangListPrint.UseVisualStyleBackColor = true;
-            this.btnRangListPrint.Click += new System.EventHandler(this.btnRangListPrint_Click);
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -112,6 +105,13 @@
             // skupIgracaBindingSource
             // 
             this.skupIgracaBindingSource.DataSource = typeof(ApiCollector.SkupIgraca);
+            // 
+            // btnRangListPrint
+            // 
+            resources.ApplyResources(this.btnRangListPrint, "btnRangListPrint");
+            this.btnRangListPrint.Name = "btnRangListPrint";
+            this.btnRangListPrint.UseVisualStyleBackColor = true;
+            this.btnRangListPrint.Click += new System.EventHandler(this.btnRangListPrint_Click);
             // 
             // RangLista
             // 

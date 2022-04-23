@@ -21,9 +21,16 @@ namespace FootballWPF
     /// </summary>
     public partial class Igrac : UserControl
     {
-        public Igrac()
+        private SkupIgraca igrac;
+        public Igrac(SkupIgraca igrac)
         {
             InitializeComponent();
+            this.igrac = igrac;
+        }
+
+        private void ucIgrac_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.lblIgrac.Content = igrac.Name;
         }
     }
 }

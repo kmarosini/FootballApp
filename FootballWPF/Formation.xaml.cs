@@ -28,16 +28,31 @@ namespace FootballWPF
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            List<ApiCollector.Tim> list = await Collector.DohvatiMuskoPrvenstvo();
-            List<ApiCollector.SkupIgraca> list2 = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
+            //List<ApiCollector.Games.Root> list = await PrepareForForm.DohvatiIgraca();
+            //List<ApiCollector.SkupIgraca> igraci = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
 
-            //foreach (var x in list)
+            //foreach (var item in list)
             //{
-            //    if (x.Fifa_code == SaverLoader.tim.Fifa_code)
+            //    if (item.home_team.code == SaverLoader.tim.Fifa_code)
             //    {
-            //        foreach (var y in list2)
+            //        foreach (var igrac in item.home_team_statistics.starting_eleven)
             //        {
-            //            pnlIgraci.Children.Add(new Igrac());
+            //            if (igrac.Position == "Goalie")
+            //            {
+            //                this.Goalie.Children.Add(new Igrac(igrac));
+            //            }
+            //            if (igrac.Position == "Defender")
+            //            {
+            //                this.Defender.Children.Add(new Igrac(igrac));
+            //            }
+            //            if (igrac.Position == "Midfield")
+            //            {
+            //                this.Midfield.Children.Add(new Igrac(igrac));
+            //            }
+            //            if (igrac.Position == "Forward")
+            //            {
+            //                this.Forward.Children.Add(new Igrac(igrac));
+            //            }
             //        }
             //    }
             //}
