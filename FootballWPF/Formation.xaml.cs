@@ -28,8 +28,8 @@ namespace FootballWPF
 
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            //List<ApiCollector.Games.Root> list = await PrepareForForm.DohvatiIgraca();
-            //List<ApiCollector.SkupIgraca> igraci = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
+            List<ApiCollector.Games.Root> list = await PrepareForForm.DohvatiIgraca();
+            List<ApiCollector.SkupIgraca> igraci = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
 
             //foreach (var item in list)
             //{
