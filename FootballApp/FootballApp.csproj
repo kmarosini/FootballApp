@@ -61,6 +61,12 @@
     <Compile Include="IgracInfo.Designer.cs">
       <DependentUpon>IgracInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="IgracStatistika.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IgracStatistika.Designer.cs">
+      <DependentUpon>IgracStatistika.cs</DependentUpon>
+    </Compile>
     <Compile Include="InformacijeOUtakmici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IgracInfo.resx">
       <DependentUpon>IgracInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IgracStatistika.resx">
+      <DependentUpon>IgracStatistika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InformacijeOUtakmici.en.resx">
       <DependentUpon>InformacijeOUtakmici.cs</DependentUpon>
