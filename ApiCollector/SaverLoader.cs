@@ -10,9 +10,9 @@ namespace ApiCollector
 {
     public class SaverLoader
     {
-        public const string DIR = @"C:\Users\programer10.UCIONE.002\Desktop\km\FootballApp";
+        public const string DIR = @"C:\Users\programer10\Desktop\km\FootballApp";
         public const string PATH = DIR + @"\konfiguracija.txt";
-        public const string FAV_DIR = @"C:\Users\programer10.UCIONE.002\Desktop\km\FootballApp";
+        public const string FAV_DIR = @"C:\Users\programer10\Desktop\km\FootballApp";
         public const string FAV_PATH = FAV_DIR + @"\favourite_players.txt";
         private const char DEL = '|';
 

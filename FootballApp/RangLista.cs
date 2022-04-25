@@ -15,6 +15,7 @@ namespace FootballApp
 {
     public partial class RangLista : Form
     {
+        int counter = 0;
         public RangLista()
         {
             InitializeComponent();
@@ -22,28 +23,32 @@ namespace FootballApp
 
         private async void RangLista_Load(object sender, EventArgs e)
         {
-            List<ApiCollector.SkupIgraca> skupIgraca = await ApiCollector.PrepareForForm.DohvatiStatistikuIgraca();
-
+            List<ApiCollector.SkupIgraca> skupIgraca = await ApiCollector.PrepareForForm.DohvatiStatistikuIgraca();           
             dgvRangLista.DataSource = skupIgraca;
             CheckForPicture();
+            
+
         }
 
         private async void CheckForPicture()
         {
             List<ApiCollector.SkupIgraca> list = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
-            
-  
+
+
             foreach (var igrac in list)
             {
-                var pic = $@"C:\Users\programer10.UCIONE.002\Desktop\km\FootballApp\MojiResursi\{igrac.Name}.jpg";
-               
+                var pic = $@"C:\Users\programer10\Desktop\km\FootballApp\MojiResursi\{igrac.Name}.jpg";
+
                 if (File.Exists(pic))
                 {
-                    Bitmap img = (Bitmap)Bitmap.FromFile(pic);
+
+                    dgvRangLista.Rows[counter++].Cells[7].Value = "bok";
+                    
 
                 }
+               
             }
-            
+           
         }
 
         private void btnRangListPrint_Click(object sender, EventArgs e)
@@ -60,7 +65,5 @@ namespace FootballApp
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dgvRangLista);
         }
-
-
     }
 }

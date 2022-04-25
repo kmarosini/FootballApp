@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangLista));
             this.dgvRangLista = new System.Windows.Forms.DataGridView();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.captainDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.shirtnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.goalNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yellowCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isFavouriteDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.skupIgracaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnRangListPrint = new System.Windows.Forms.Button();
-            this.SlikaColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.SlikaColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isFavouriteDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.yellowCardDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.goalNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.positionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.shirtnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.captainDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRangLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -62,48 +62,6 @@
             this.dgvRangLista.DataSource = this.skupIgracaBindingSource;
             this.dgvRangLista.Name = "dgvRangLista";
             // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // captainDataGridViewCheckBoxColumn
-            // 
-            this.captainDataGridViewCheckBoxColumn.DataPropertyName = "Captain";
-            resources.ApplyResources(this.captainDataGridViewCheckBoxColumn, "captainDataGridViewCheckBoxColumn");
-            this.captainDataGridViewCheckBoxColumn.Name = "captainDataGridViewCheckBoxColumn";
-            // 
-            // shirtnumberDataGridViewTextBoxColumn
-            // 
-            this.shirtnumberDataGridViewTextBoxColumn.DataPropertyName = "Shirt_number";
-            resources.ApplyResources(this.shirtnumberDataGridViewTextBoxColumn, "shirtnumberDataGridViewTextBoxColumn");
-            this.shirtnumberDataGridViewTextBoxColumn.Name = "shirtnumberDataGridViewTextBoxColumn";
-            // 
-            // positionDataGridViewTextBoxColumn
-            // 
-            this.positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
-            resources.ApplyResources(this.positionDataGridViewTextBoxColumn, "positionDataGridViewTextBoxColumn");
-            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
-            // 
-            // goalNumberDataGridViewTextBoxColumn
-            // 
-            this.goalNumberDataGridViewTextBoxColumn.DataPropertyName = "GoalNumber";
-            resources.ApplyResources(this.goalNumberDataGridViewTextBoxColumn, "goalNumberDataGridViewTextBoxColumn");
-            this.goalNumberDataGridViewTextBoxColumn.Name = "goalNumberDataGridViewTextBoxColumn";
-            // 
-            // yellowCardDataGridViewTextBoxColumn
-            // 
-            this.yellowCardDataGridViewTextBoxColumn.DataPropertyName = "YellowCard";
-            resources.ApplyResources(this.yellowCardDataGridViewTextBoxColumn, "yellowCardDataGridViewTextBoxColumn");
-            this.yellowCardDataGridViewTextBoxColumn.Name = "yellowCardDataGridViewTextBoxColumn";
-            // 
-            // isFavouriteDataGridViewCheckBoxColumn
-            // 
-            this.isFavouriteDataGridViewCheckBoxColumn.DataPropertyName = "IsFavourite";
-            resources.ApplyResources(this.isFavouriteDataGridViewCheckBoxColumn, "isFavouriteDataGridViewCheckBoxColumn");
-            this.isFavouriteDataGridViewCheckBoxColumn.Name = "isFavouriteDataGridViewCheckBoxColumn";
-            // 
             // skupIgracaBindingSource
             // 
             this.skupIgracaBindingSource.DataSource = typeof(ApiCollector.SkupIgraca);
@@ -119,6 +77,50 @@
             // 
             resources.ApplyResources(this.SlikaColumn, "SlikaColumn");
             this.SlikaColumn.Name = "SlikaColumn";
+            this.SlikaColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SlikaColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // isFavouriteDataGridViewCheckBoxColumn
+            // 
+            this.isFavouriteDataGridViewCheckBoxColumn.DataPropertyName = "IsFavourite";
+            resources.ApplyResources(this.isFavouriteDataGridViewCheckBoxColumn, "isFavouriteDataGridViewCheckBoxColumn");
+            this.isFavouriteDataGridViewCheckBoxColumn.Name = "isFavouriteDataGridViewCheckBoxColumn";
+            // 
+            // yellowCardDataGridViewTextBoxColumn
+            // 
+            this.yellowCardDataGridViewTextBoxColumn.DataPropertyName = "YellowCard";
+            resources.ApplyResources(this.yellowCardDataGridViewTextBoxColumn, "yellowCardDataGridViewTextBoxColumn");
+            this.yellowCardDataGridViewTextBoxColumn.Name = "yellowCardDataGridViewTextBoxColumn";
+            // 
+            // goalNumberDataGridViewTextBoxColumn
+            // 
+            this.goalNumberDataGridViewTextBoxColumn.DataPropertyName = "GoalNumber";
+            resources.ApplyResources(this.goalNumberDataGridViewTextBoxColumn, "goalNumberDataGridViewTextBoxColumn");
+            this.goalNumberDataGridViewTextBoxColumn.Name = "goalNumberDataGridViewTextBoxColumn";
+            // 
+            // positionDataGridViewTextBoxColumn
+            // 
+            this.positionDataGridViewTextBoxColumn.DataPropertyName = "Position";
+            resources.ApplyResources(this.positionDataGridViewTextBoxColumn, "positionDataGridViewTextBoxColumn");
+            this.positionDataGridViewTextBoxColumn.Name = "positionDataGridViewTextBoxColumn";
+            // 
+            // shirtnumberDataGridViewTextBoxColumn
+            // 
+            this.shirtnumberDataGridViewTextBoxColumn.DataPropertyName = "Shirt_number";
+            resources.ApplyResources(this.shirtnumberDataGridViewTextBoxColumn, "shirtnumberDataGridViewTextBoxColumn");
+            this.shirtnumberDataGridViewTextBoxColumn.Name = "shirtnumberDataGridViewTextBoxColumn";
+            // 
+            // captainDataGridViewCheckBoxColumn
+            // 
+            this.captainDataGridViewCheckBoxColumn.DataPropertyName = "Captain";
+            resources.ApplyResources(this.captainDataGridViewCheckBoxColumn, "captainDataGridViewCheckBoxColumn");
+            this.captainDataGridViewCheckBoxColumn.Name = "captainDataGridViewCheckBoxColumn";
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            resources.ApplyResources(this.nameDataGridViewTextBoxColumn, "nameDataGridViewTextBoxColumn");
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             // 
             // RangLista
             // 
@@ -147,6 +149,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn goalNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yellowCardDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isFavouriteDataGridViewCheckBoxColumn;
-        private System.Windows.Forms.DataGridViewImageColumn SlikaColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SlikaColumn;
     }
 }

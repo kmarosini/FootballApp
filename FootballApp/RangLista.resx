@@ -167,17 +167,14 @@
   <data name="btnRangListPrint.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 28</value>
   </data>
-  <data name="&gt;&gt;SlikaColumn.Name" xml:space="preserve">
-    <value>SlikaColumn</value>
-  </data>
   <data name="nameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Name</value>
   </data>
   <data name="&gt;&gt;dgvRangLista.Name" xml:space="preserve">
     <value>dgvRangLista</value>
   </data>
-  <data name="&gt;&gt;dgvRangLista.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;SlikaColumn.Name" xml:space="preserve">
+    <value>SlikaColumn</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -207,10 +204,13 @@
     <value>IsFavourite</value>
   </data>
   <data name="&gt;&gt;SlikaColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="SlikaColumn.HeaderText" xml:space="preserve">
     <value>Slika</value>
+  </data>
+  <data name="SlikaColumn.Width" type="System.Int32, mscorlib">
+    <value>42</value>
   </data>
   <data name="&gt;&gt;isFavouriteDataGridViewCheckBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -250,6 +250,9 @@
   </data>
   <data name="&gt;&gt;dgvRangLista.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvRangLista.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnRangListPrint.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
