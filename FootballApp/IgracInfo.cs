@@ -44,7 +44,7 @@ namespace FootballApp
             this.lblBroj.Text = igrac.Shirt_number.ToString();
             this.lblKapetan.Text = igrac.Captain ? "KAPETAN" : "NE";
             this.textBox1.Visible = false;
-            string picPath = $@"C:\Users\Korsnik\Desktop\OOP V2\KarloMarosini_FootballApp\FootballApp\MojiResursi\{igrac.Name}.jpg";
+            string picPath = $@"C:\Users\programer10.UCIONE.002\Desktop\km\FootballApp\MojiResursi\{igrac.Name}.jpg";
 
             if (File.Exists(picPath))
             {
@@ -107,7 +107,7 @@ namespace FootballApp
             save.Filter = "*.jpg; *.jpeg; *.gif; *.bmp)| *.jpg; *.jpeg; *.gif; *.bmp";
             save.FileName = igrac.Name;
             save.DefaultExt = "*.jpg";
-            save.InitialDirectory = @"C:\Users\Korsnik\Desktop\OOP V2\KarloMarosini_FootballApp\FootballApp\MojiResursi\";
+            save.InitialDirectory = @"C:\Users\programer10.UCIONE.002\Desktop\km\FootballApp\MojiResursi\";
 
             if (save.ShowDialog() == DialogResult.OK)
             {

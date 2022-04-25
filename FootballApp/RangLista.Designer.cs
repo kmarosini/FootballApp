@@ -40,6 +40,7 @@
             this.isFavouriteDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.skupIgracaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnRangListPrint = new System.Windows.Forms.Button();
+            this.SlikaColumn = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRangLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -56,7 +57,8 @@
             this.positionDataGridViewTextBoxColumn,
             this.goalNumberDataGridViewTextBoxColumn,
             this.yellowCardDataGridViewTextBoxColumn,
-            this.isFavouriteDataGridViewCheckBoxColumn});
+            this.isFavouriteDataGridViewCheckBoxColumn,
+            this.SlikaColumn});
             this.dgvRangLista.DataSource = this.skupIgracaBindingSource;
             this.dgvRangLista.Name = "dgvRangLista";
             // 
@@ -113,6 +115,11 @@
             this.btnRangListPrint.UseVisualStyleBackColor = true;
             this.btnRangListPrint.Click += new System.EventHandler(this.btnRangListPrint_Click);
             // 
+            // SlikaColumn
+            // 
+            resources.ApplyResources(this.SlikaColumn, "SlikaColumn");
+            this.SlikaColumn.Name = "SlikaColumn";
+            // 
             // RangLista
             // 
             resources.ApplyResources(this, "$this");
@@ -140,5 +147,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn goalNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn yellowCardDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn isFavouriteDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn SlikaColumn;
     }
 }

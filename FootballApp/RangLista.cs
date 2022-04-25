@@ -1,9 +1,11 @@
-﻿using DGVPrinterHelper;
+﻿using ApiCollector;
+using DGVPrinterHelper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,25 @@ namespace FootballApp
             List<ApiCollector.SkupIgraca> skupIgraca = await ApiCollector.PrepareForForm.DohvatiStatistikuIgraca();
 
             dgvRangLista.DataSource = skupIgraca;
+            CheckForPicture();
+        }
+
+        private async void CheckForPicture()
+        {
+            List<ApiCollector.SkupIgraca> list = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
+            
+  
+            foreach (var igrac in list)
+            {
+                var pic = $@"C:\Users\programer10.UCIONE.002\Desktop\km\FootballApp\MojiResursi\{igrac.Name}.jpg";
+               
+                if (File.Exists(pic))
+                {
+                    Bitmap img = (Bitmap)Bitmap.FromFile(pic);
+
+                }
+            }
+            
         }
 
         private void btnRangListPrint_Click(object sender, EventArgs e)
@@ -39,5 +60,7 @@ namespace FootballApp
             printer.FooterSpacing = 15;
             printer.PrintDataGridView(dgvRangLista);
         }
+
+
     }
 }
