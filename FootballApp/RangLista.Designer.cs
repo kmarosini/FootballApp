@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RangLista));
             this.btnRangListPrint = new System.Windows.Forms.Button();
-            this.skupIgracaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.flpStatistika = new System.Windows.Forms.FlowLayoutPanel();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.skupIgracaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,19 +45,23 @@
             this.btnRangListPrint.UseVisualStyleBackColor = true;
             this.btnRangListPrint.Click += new System.EventHandler(this.btnRangListPrint_Click_1);
             // 
-            // skupIgracaBindingSource
-            // 
-            this.skupIgracaBindingSource.DataSource = typeof(ApiCollector.SkupIgraca);
-            // 
             // flpStatistika
             // 
             resources.ApplyResources(this.flpStatistika, "flpStatistika");
             this.flpStatistika.Name = "flpStatistika";
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // printPreviewDialog1
             // 
             resources.ApplyResources(this.printPreviewDialog1, "printPreviewDialog1");
             this.printPreviewDialog1.Name = "printPreviewDialog1";
+            // 
+            // skupIgracaBindingSource
+            // 
+            this.skupIgracaBindingSource.DataSource = typeof(ApiCollector.SkupIgraca);
             // 
             // RangLista
             // 

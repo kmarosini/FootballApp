@@ -43,7 +43,6 @@
             // 
             // dgvUtakmica
             // 
-            resources.ApplyResources(this.dgvUtakmica, "dgvUtakmica");
             this.dgvUtakmica.AutoGenerateColumns = false;
             this.dgvUtakmica.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUtakmica.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -52,6 +51,7 @@
             this.hometeamcountryDataGridViewTextBoxColumn,
             this.awayteamcountryDataGridViewTextBoxColumn});
             this.dgvUtakmica.DataSource = this.rootBindingSource;
+            resources.ApplyResources(this.dgvUtakmica, "dgvUtakmica");
             this.dgvUtakmica.Name = "dgvUtakmica";
             // 
             // locationDataGridViewTextBoxColumn

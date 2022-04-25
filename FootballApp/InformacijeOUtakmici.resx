@@ -117,117 +117,114 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;btnPrintDetalja.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="locationDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>location</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
+  <data name="attendanceDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>attendance</value>
   </data>
-  <data name="&gt;&gt;dgvUtakmica.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;btnPrintDetalja.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;attendanceDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>attendanceDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="hometeamcountryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>home_team_country</value>
   </data>
   <data name="awayteamcountryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>away_team_country</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
+  <metadata name="rootBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dgvUtakmica.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 59</value>
+    <value>230, 120</value>
   </data>
-  <data name="&gt;&gt;dgvUtakmica.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>InformacijeOUtakmici</value>
+  <data name="dgvUtakmica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>473, 358</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="dgvUtakmica.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;rootBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPrintDetalja.Text" xml:space="preserve">
-    <value>Print</value>
-  </data>
-  <data name="btnPrintDetalja.Location" type="System.Drawing.Point, System.Drawing">
-    <value>339, 12</value>
-  </data>
-  <data name="&gt;&gt;locationDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>locationDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;hometeamcountryDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;dgvUtakmica.Name" xml:space="preserve">
     <value>dgvUtakmica</value>
+  </data>
+  <data name="&gt;&gt;dgvUtakmica.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvUtakmica.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dgvUtakmica.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnPrintDetalja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 47</value>
   </data>
   <data name="btnPrintDetalja.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 24</value>
   </data>
-  <data name="&gt;&gt;awayteamcountryDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="btnPrintDetalja.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="hometeamcountryDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>home_team_country</value>
+  <data name="btnPrintDetalja.Text" xml:space="preserve">
+    <value>Print</value>
   </data>
-  <data name="locationDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>location</value>
+  <data name="&gt;&gt;btnPrintDetalja.Name" xml:space="preserve">
+    <value>btnPrintDetalja</value>
+  </data>
+  <data name="&gt;&gt;btnPrintDetalja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnPrintDetalja.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnPrintDetalja.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>987, 712</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>InformacijeOUtakmici</value>
+  </data>
+  <data name="&gt;&gt;locationDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>locationDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;locationDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;attendanceDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>attendanceDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;attendanceDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hometeamcountryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>hometeamcountryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;hometeamcountryDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;awayteamcountryDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>awayteamcountryDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;awayteamcountryDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;rootBindingSource.Name" xml:space="preserve">
     <value>rootBindingSource</value>
   </data>
-  <data name="&gt;&gt;btnPrintDetalja.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btnPrintDetalja.Name" xml:space="preserve">
-    <value>btnPrintDetalja</value>
-  </data>
-  <data name="&gt;&gt;hometeamcountryDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>hometeamcountryDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;rootBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>InformacijeOUtakmici</value>
   </data>
-  <data name="attendanceDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>attendance</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dgvUtakmica.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dgvUtakmica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>776, 333</value>
-  </data>
-  <data name="&gt;&gt;attendanceDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnPrintDetalja.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;awayteamcountryDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>awayteamcountryDataGridViewTextBoxColumn</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="rootBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>hr-HR</value>
-  </metadata>
 </root>

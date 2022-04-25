@@ -54,8 +54,8 @@
             // 
             // btnPostavke
             // 
-            resources.ApplyResources(this.btnPostavke, "btnPostavke");
             this.btnPostavke.BackColor = System.Drawing.Color.RoyalBlue;
+            resources.ApplyResources(this.btnPostavke, "btnPostavke");
             this.btnPostavke.Name = "btnPostavke";
             this.btnPostavke.UseVisualStyleBackColor = false;
             this.btnPostavke.Click += new System.EventHandler(this.btnPostavke_Click);
@@ -83,8 +83,8 @@
             // 
             // pnlGlavniPanel
             // 
-            resources.ApplyResources(this.pnlGlavniPanel, "pnlGlavniPanel");
             this.pnlGlavniPanel.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.pnlGlavniPanel, "pnlGlavniPanel");
             this.pnlGlavniPanel.Name = "pnlGlavniPanel";
             // 
             // GlavnaForma

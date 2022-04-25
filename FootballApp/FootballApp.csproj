@@ -128,6 +128,12 @@
     <EmbeddedResource Include="IgracInfo.resx">
       <DependentUpon>IgracInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IgracStatistika.en.resx">
+      <DependentUpon>IgracStatistika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IgracStatistika.hr-HR.resx">
+      <DependentUpon>IgracStatistika.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IgracStatistika.resx">
       <DependentUpon>IgracStatistika.cs</DependentUpon>
     </EmbeddedResource>

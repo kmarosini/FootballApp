@@ -117,9 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnRangListPrint.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnRangListPrint.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 12</value>
+    <value>441, 23</value>
   </data>
   <data name="btnRangListPrint.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 28</value>
@@ -143,17 +147,14 @@
   <data name="&gt;&gt;btnRangListPrint.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="skupIgracaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="flpStatistika.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="flpStatistika.Location" type="System.Drawing.Point, System.Drawing">
-    <value>195, 67</value>
+    <value>77, 68</value>
   </data>
   <data name="flpStatistika.Size" type="System.Drawing.Size, System.Drawing">
-    <value>357, 314</value>
+    <value>842, 516</value>
   </data>
   <data name="flpStatistika.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -361,6 +362,9 @@
         wf+0BQAAgAUAAIAFAACAAQAAgAHB/4ABAACAAQAAgAEAALwBAAC8AQAAvAHB/4ABbP///5H/
 </value>
   </data>
+  <data name="printPreviewDialog1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="printPreviewDialog1.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -370,6 +374,9 @@
   <data name="&gt;&gt;printPreviewDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.PrintPreviewDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <metadata name="skupIgracaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -377,22 +384,22 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 450</value>
+    <value>987, 712</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>RangLista</value>
-  </data>
-  <data name="&gt;&gt;skupIgracaBindingSource.Name" xml:space="preserve">
-    <value>skupIgracaBindingSource</value>
-  </data>
-  <data name="&gt;&gt;skupIgracaBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;printDocument1.Name" xml:space="preserve">
     <value>printDocument1</value>
   </data>
   <data name="&gt;&gt;printDocument1.Type" xml:space="preserve">
     <value>System.Drawing.Printing.PrintDocument, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="&gt;&gt;skupIgracaBindingSource.Name" xml:space="preserve">
+    <value>skupIgracaBindingSource</value>
+  </data>
+  <data name="&gt;&gt;skupIgracaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>RangLista</value>

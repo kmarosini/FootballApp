@@ -16,7 +16,8 @@ namespace FootballApp
 {
     public partial class RangLista : Form
     {
-       
+        private Bitmap bmp;
+        private List<Bitmap> bmpList = new List<Bitmap>();
         public RangLista()
         {
             InitializeComponent();
@@ -35,8 +36,29 @@ namespace FootballApp
 
         private void btnRangListPrint_Click_1(object sender, EventArgs e)
         {
-            printPreviewDialog1.ShowDialog();
+            foreach (IgracStatistika item in flpStatistika.Controls)
+            {
+                Bitmap testing = new Bitmap(item.Width, item.Height);
+                item.DrawToBitmap(testing, new Rectangle(0, 0, item.Width, item.Height));
+                bmpList.Add(testing);
+            }
+            printDocument1.Print();
         }
 
+        private void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            int yGoUnder = 10;
+            int xGoUnder = 10;
+            foreach (Bitmap item in bmpList)
+            {
+                if (yGoUnder > 1100)
+                {
+                    yGoUnder= 10;
+                    xGoUnder += 270;
+                }
+                e.Graphics.DrawImage(item, xGoUnder, yGoUnder);
+                yGoUnder += 115;
+            }
+        }
     }
 }

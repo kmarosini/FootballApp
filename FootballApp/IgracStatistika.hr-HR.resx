@@ -118,38 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnDetalji.Location" type="System.Drawing.Point, System.Drawing">
-    <value>635, 715</value>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
   </data>
-  <data name="btnRangLista.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 715</value>
-  </data>
-  <data name="btnRangLista.Text" xml:space="preserve">
-    <value>Rang Lista</value>
-  </data>
-  <data name="btnPostavke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>761, 715</value>
-  </data>
-  <data name="btnOmiljeniIgraci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 715</value>
-  </data>
-  <data name="btnOmiljeniTim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 715</value>
-  </data>
-  <data name="btnJezikPrvenstvo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 715</value>
-  </data>
-  <data name="pnlGlavniPanel.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>986, 712</value>
-  </data>
-  <data name="pnlGlavniPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>986, 712</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>984, 761</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Ime:</value>
   </data>
 </root>

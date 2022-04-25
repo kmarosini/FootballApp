@@ -122,7 +122,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>221, 186</value>
+    <value>242, 309</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 20</value>
@@ -131,7 +131,7 @@
     <value>Language:</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 132</value>
+    <value>209, 255</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 20</value>
@@ -139,14 +139,23 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Championship:</value>
   </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>624, 365</value>
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 13</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>CHOOSEN CHAMPIONSHIP:</value>
   </data>
+  <data name="lblIzabranoPrvenstvo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 365</value>
+  </data>
+  <data name="lblIzabraniJezik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>782, 391</value>
+  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>555, 258</value>
+    <value>647, 391</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 13</value>
