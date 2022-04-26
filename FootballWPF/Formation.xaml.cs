@@ -31,31 +31,32 @@ namespace FootballWPF
             List<ApiCollector.Games.Root> list = await PrepareForForm.DohvatiIgraca();
             List<ApiCollector.SkupIgraca> igraci = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
 
-            //foreach (var item in list)
-            //{
-            //    if (item.home_team.code == SaverLoader.tim.Fifa_code)
-            //    {
-            //        foreach (var igrac in item.home_team_statistics.starting_eleven)
-            //        {
-            //            if (igrac.Position == "Goalie")
-            //            {
-            //                this.Goalie.Children.Add(new Igrac(igrac));
-            //            }
-            //            if (igrac.Position == "Defender")
-            //            {
-            //                this.Defender.Children.Add(new Igrac(igrac));
-            //            }
-            //            if (igrac.Position == "Midfield")
-            //            {
-            //                this.Midfield.Children.Add(new Igrac(igrac));
-            //            }
-            //            if (igrac.Position == "Forward")
-            //            {
-            //                this.Forward.Children.Add(new Igrac(igrac));
-            //            }
-            //        }
-            //    }
-            //}
+            foreach (var item in list)
+            {
+                if (item.home_team.code == SaverLoader.tim.Fifa_code)
+                {
+                    foreach (var igrac in item.home_team_statistics.starting_eleven)
+                    {
+                        if (igrac.Position == "Goalie")
+                        {
+                            this.Goalie.Children.Add(new Igrac(igrac));
+                        }
+                        if (igrac.Position == "Defender")
+                        {
+                            this.Defender.Children.Add(new Igrac(igrac));
+     
+                        }
+                        //if (igrac.Position == "Midfield")
+                        //{
+                        //    this.Midfield.Children.Add(new Igrac(igrac));
+                        //}
+                        //if (igrac.Position == "Forward")
+                        //{
+                        //    this.Forward.Children.Add(new Igrac(igrac));
+                        //}
+                    }
+                }
+            }
         }
     }
 }
