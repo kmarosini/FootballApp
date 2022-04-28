@@ -33,7 +33,7 @@ namespace FootballApp
             SaverLoader.tim.Fifa_code = tim.Fifa_code;
             
 
-            MessageBox.Show("Omiljeni tim je spremljen!");
+            MessageBox.Show(Properties.Resources.OmiljeniTimSpremljen);
 
             RefreshUserInterface();
         }

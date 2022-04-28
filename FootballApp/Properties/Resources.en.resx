@@ -118,36 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="JezikPrvenstvoSpremljeni" xml:space="preserve">
-    <value>Jezik i prvenstvo su spremljeni!</value>
+    <value>Language and championship saved!</value>
   </data>
   <data name="JezikUpozorenje" xml:space="preserve">
-    <value>Morate odabrati i jezik i prvenstvo!</value>
+    <value>You must select both language and championship!</value>
   </data>
   <data name="Kapetan" xml:space="preserve">
-    <value>KAPETAN</value>
+    <value>Captain</value>
   </data>
   <data name="Ne" xml:space="preserve">
-    <value>NE</value>
+    <value>NO</value>
   </data>
   <data name="Notifikacija" xml:space="preserve">
-    <value>Obavijest!</value>
+    <value>Notification!</value>
   </data>
   <data name="OmiljeniTimSpremljen" xml:space="preserve">
-    <value>Omiljeni tim je spremljen!</value>
+    <value>Favourite team saved succesfully!</value>
   </data>
   <data name="PostavkePromjena" xml:space="preserve">
-    <value>Jeste li sigurni da želite promjeniti postavke?</value>
+    <value>Are you sure that you want to change settings?</value>
   </data>
   <data name="PostavkePromjenjene" xml:space="preserve">
-    <value>Postavke uspjesno promjenjene!</value>
+    <value>Settings succesfully changed!</value>
   </data>
   <data name="SpremljenaSlika" xml:space="preserve">
-    <value>Uspjesno spremljena slika!</value>
+    <value>Succesfully saved picture!</value>
   </data>
   <data name="UpozorenjeUpozorenje" xml:space="preserve">
-    <value>Upozorenje!</value>
+    <value>Warning!</value>
   </data>
   <data name="ViseIgraca" xml:space="preserve">
-    <value>Nemožete izabrati više od 3 igrača!</value>
+    <value>You cant choose more than 3 favourite players!</value>
   </data>
 </root>

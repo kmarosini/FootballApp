@@ -130,6 +130,9 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Prvenstvo:</value>
   </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
   <data name="cbJezik.Location" type="System.Drawing.Point, System.Drawing">
     <value>379, 308</value>
   </data>
@@ -170,9 +173,6 @@
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -181,9 +181,6 @@
   </data>
   <data name="btnSpremi.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 33</value>
-  </data>
-  <data name="lblIzabraniJezik.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
   </data>
   <data name="cbPrvenstvo.Items" xml:space="preserve">
     <value>Muško</value>
@@ -212,8 +209,8 @@
   <data name="lblIzabraniJezik.Location" type="System.Drawing.Point, System.Drawing">
     <value>748, 381</value>
   </data>
-  <data name="&gt;&gt;cbJezik.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
   <data name="&gt;&gt;lblIzabraniJezik.Name" xml:space="preserve">
     <value>lblIzabraniJezik</value>
@@ -236,8 +233,8 @@
   <data name="&gt;&gt;lblIzabraniJezik.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="lblIzabraniJezik.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblIzabranoPrvenstvo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -264,6 +261,9 @@
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>134, 13</value>
   </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 355</value>
+  </data>
   <data name="&gt;&gt;cbPrvenstvo.Name" xml:space="preserve">
     <value>cbPrvenstvo</value>
   </data>
@@ -275,9 +275,6 @@
   </data>
   <data name="&gt;&gt;cbJezik.Name" xml:space="preserve">
     <value>cbJezik</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>987, 712</value>
@@ -318,6 +315,9 @@
   <data name="lblIzabraniJezik.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="lblIzabraniJezik.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>IZABRANO PRVENSTVO:</value>
   </data>
@@ -345,6 +345,9 @@
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>632, 381</value>
   </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -354,14 +357,14 @@
   <data name="cbPrvenstvo.Location" type="System.Drawing.Point, System.Drawing">
     <value>379, 257</value>
   </data>
-  <data name="lblIzabraniJezik.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;cbJezik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 355</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblIzabraniJezik.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -378,8 +381,8 @@
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
   <data name="&gt;&gt;btnSpremi.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -397,6 +400,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
+    <value>hr-HR</value>
   </metadata>
 </root>

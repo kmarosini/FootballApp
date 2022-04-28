@@ -46,7 +46,7 @@ namespace FootballApp
 
             if (count >= 3)
             {
-                MessageBox.Show("You cant choose more than 3 favourite players!");
+                MessageBox.Show(Properties.Resources.ViseIgraca);
                 return;
             }
 

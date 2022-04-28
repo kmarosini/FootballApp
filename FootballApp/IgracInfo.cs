@@ -42,9 +42,9 @@ namespace FootballApp
             this.lblIme.Text = igrac.Name;
             this.lblPozicija.Text = igrac.Position;
             this.lblBroj.Text = igrac.Shirt_number.ToString();
-            this.lblKapetan.Text = igrac.Captain ? "KAPETAN" : "NE";
+            this.lblKapetan.Text = igrac.Captain ? Properties.Resources.Kapetan : Properties.Resources.Ne;
             this.textBox1.Visible = false;
-            string picPath = $@"C:\Users\Korsnik\Desktop\OOP V2\KarloMarosini_FootballApp\FootballApp\MojiResursi\{igrac.Name}.jpg";
+            string picPath = $@"C:\Programiranje\OOP projekt\FootballApp\MojiResursi\{igrac.Name}.jpg";
 
             if (File.Exists(picPath))
             {
@@ -112,7 +112,7 @@ namespace FootballApp
             if (save.ShowDialog() == DialogResult.OK)
             {
                 pbSlika.Image.Save(save.FileName);
-                MessageBox.Show("Uspjesno spremljena slika!", "Notification");
+                MessageBox.Show(Properties.Resources.SpremljenaSlika, Properties.Resources.Notifikacija);
             }
         }
 

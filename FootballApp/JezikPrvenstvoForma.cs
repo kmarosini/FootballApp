@@ -24,12 +24,12 @@ namespace FootballApp
             SaverLoader.Prvenstvo = cbPrvenstvo.GetItemText(this.cbPrvenstvo.SelectedItem);
             if (SaverLoader.Jezik == "" || SaverLoader.Prvenstvo == "")
             {
-                MessageBox.Show("Morate odabrati i jezik i prvenstvo!", "Warning");
+                MessageBox.Show(Properties.Resources.JezikUpozorenje, Properties.Resources.UpozorenjeUpozorenje);
             }
             else
             { 
                 ChangeLanguage(cbJezik.GetItemText(this.cbJezik.SelectedItem));
-                MessageBox.Show("Jezik i prvenstvo su spremljeni!", "Notification");
+                MessageBox.Show(Properties.Resources.JezikPrvenstvoSpremljeni, Properties.Resources.Notifikacija);
             } 
         }
 
