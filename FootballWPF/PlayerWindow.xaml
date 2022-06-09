@@ -1,0 +1,87 @@
+﻿<Window x:Class="FootballWPF.PlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FootballWPF"
+        mc:Ignorable="d"
+        Title="PlayerWindow" Height="450" Width="800"
+        Loaded="Window_Loaded"
+        >
+    <Grid>
+        <StackPanel>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">IME:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblIme"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">BROJ:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblBroj"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">POZICIJA:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblPozicija"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">KAPETAN::</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblKapetan"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">BROJ ZABIJENIH:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblBrojZabijenih"></Label>
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                    <Label FontWeight="Bold" FontSize="12">BROJ ZUTIH:</Label>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                    <Label x:Name="lblBrojZutih"></Label>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

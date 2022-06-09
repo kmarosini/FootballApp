@@ -127,14 +127,14 @@
   <data name="label1.Text" xml:space="preserve">
     <value>ODABERI:</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;btnSpremi.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="btnSpremi.Text" xml:space="preserve">
     <value>Spremi</value>
+  </data>
+  <data name="&gt;&gt;cbOdaberiIgraca.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>Ime:</value>
@@ -157,9 +157,6 @@
   <data name="&gt;&gt;lblKapetan.Name" xml:space="preserve">
     <value>lblKapetan</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -172,22 +169,22 @@
   <data name="&gt;&gt;lblIme.Name" xml:space="preserve">
     <value>lblIme</value>
   </data>
+  <data name="lblFavorit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;lblIme.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="btnSpremi.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;lblFavorit.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;btnSpremi.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="lblPozicija.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cbOdaberiIgraca.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -199,9 +196,6 @@
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
   </data>
   <data name="&gt;&gt;pbSlika.Name" xml:space="preserve">
     <value>pbSlika</value>
@@ -228,11 +222,11 @@
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 34</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 82</value>
+  <data name="&gt;&gt;pbSlika.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="lblPozicija.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
+  <data name="&gt;&gt;lblBroj.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="&gt;&gt;cbOdaberiIgraca.Name" xml:space="preserve">
     <value>cbOdaberiIgraca</value>
@@ -264,14 +258,14 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="lblIme.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;lblKapetan.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblIme.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -279,8 +273,8 @@
   <data name="&gt;&gt;pbSlika.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cbOdaberiIgraca.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>9</value>
@@ -303,14 +297,14 @@
   <data name="&gt;&gt;cbOdaberiIgraca.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lblIme.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblIme.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;lblBroj.Name" xml:space="preserve">
     <value>lblBroj</value>
   </data>
-  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="lblKapetan.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -348,8 +342,8 @@
   <data name="cbOdaberiIgraca.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 132</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -366,6 +360,9 @@
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 59</value>
   </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
   <data name="lblBroj.Text" xml:space="preserve">
     <value>label2</value>
   </data>
@@ -375,16 +372,19 @@
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 20</value>
   </data>
-  <data name="&gt;&gt;cbOdaberiIgraca.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
   <data name="pbSlika.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 92</value>
   </data>
   <data name="&gt;&gt;lblBroj.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblIme.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
@@ -402,8 +402,8 @@
   <data name="&gt;&gt;lblPozicija.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="lblIme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 34</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 82</value>
   </data>
   <data name="lblFavorit.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 25</value>
@@ -420,11 +420,11 @@
   <data name="lblFavorit.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 12</value>
   </data>
-  <data name="&gt;&gt;pbSlika.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lblFavorit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -456,29 +456,29 @@
   <data name="lblIme.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 13</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 13</value>
+  <data name="lblPozicija.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
   </data>
   <data name="&gt;&gt;lblPozicija.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="cbOdaberiIgraca.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="lblKapetan.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="cbOdaberiIgraca.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="&gt;&gt;cbOdaberiIgraca.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btnSpremi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
     <value>334, 150</value>
   </data>
-  <data name="&gt;&gt;lblIme.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="lblIme.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 34</value>
   </data>
   <data name="&gt;&gt;lblPozicija.Name" xml:space="preserve">
     <value>lblPozicija</value>
@@ -486,11 +486,11 @@
   <data name="cbOdaberiIgraca.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 14</value>
   </data>
-  <data name="&gt;&gt;lblBroj.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;cbOdaberiIgraca.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;btnSpremi.Name" xml:space="preserve">
     <value>btnSpremi</value>

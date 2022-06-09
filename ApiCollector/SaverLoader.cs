@@ -20,6 +20,7 @@ namespace ApiCollector
         public static string Jezik;
         public static string fifa;
         public static string Resolution;
+        public static string protivnik;
         public static Tim tim;
 
         // kreiranje config file-a

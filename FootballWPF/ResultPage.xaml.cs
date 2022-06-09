@@ -56,18 +56,19 @@ namespace FootballWPF
             {
                 var prviTim = SaverLoader.tim.Fifa_code;
                 var drugiTim = cbProtivnik.Text.Split('(', ')');
-                var protivnik = drugiTim[1];
+                SaverLoader.protivnik = drugiTim[1];
 
                 List<Games.Root> listaMeceva = await PrepareForForm.DohvatiIgraca();
 
+
                 foreach (var item in listaMeceva)
                 {
-                    if (item.home_team.code == prviTim && item.away_team.code == protivnik)
+                    if (item.home_team.code == prviTim && item.away_team.code == SaverLoader.protivnik)
                     {
                         lblProtivnik.Content = item.away_team.goals.ToString();
                         lblFavorit.Content = item.home_team.goals.ToString();
                     }
-                    if (item.away_team.code == prviTim && item.home_team.code == protivnik)
+                    if (item.away_team.code == prviTim && item.home_team.code == SaverLoader.protivnik)
                     {
                         lblFavorit.Content = item.away_team.goals.ToString();
                         lblProtivnik.Content = item.home_team.goals.ToString();
@@ -91,5 +92,6 @@ namespace FootballWPF
             TeamDetailsProtivnikWindow protivnik = new TeamDetailsProtivnikWindow(this.cbProtivnik);
             protivnik.Show();
         }
+
     }
 }

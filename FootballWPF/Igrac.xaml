@@ -6,8 +6,17 @@
              xmlns:local="clr-namespace:FootballWPF"
              mc:Ignorable="d" 
              d:DesignHeight="30" d:DesignWidth="100"
-             Loaded="ucIgrac_Loaded">
-    <Grid>
-        <Label x:Name="lblIgrac" Content="xxxx"/>
+             Loaded="ucIgrac_Loaded"
+             MouseDoubleClick="ucIgrac_MouseDoubleClick"
+             >
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="lblIgrac" Grid.Row="0" HorizontalAlignment="Center"/>
+        <Label x:Name="lblNumber" Grid.Row="1" HorizontalAlignment="Center" ></Label>
+        <Image x:Name="imgIgrac" Grid.Row="2" HorizontalAlignment="Center"/>
     </Grid>
 </UserControl>

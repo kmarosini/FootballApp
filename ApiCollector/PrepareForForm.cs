@@ -106,7 +106,7 @@ namespace ApiCollector
             List<ApiCollector.Games.AwayTeamEvent> list2 = await DohvatiAwayTeamEvente();
             List<ApiCollector.SkupIgraca> listaIgraca = await DohvatiImenaIgraca();
 
-            List<Games.HomeTeamEvent> novaLista = new List<Games.HomeTeamEvent>();
+            //List<Games.HomeTeamEvent> novaLista = new List<Games.HomeTeamEvent>();
 
             //cbRangLista.Items.Add(igrac.type_of_event);
             // moram proc po listi, nac koji je igrac te za svaki zeljeni event inkrementirati isti.

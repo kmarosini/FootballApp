@@ -65,6 +65,9 @@
     <Compile Include="LangChampPage.xaml.cs">
       <DependentUpon>LangChampPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PlayerWindow.xaml.cs">
+      <DependentUpon>PlayerWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Postavke.xaml.cs">
       <DependentUpon>Postavke.xaml</DependentUpon>
     </Compile>
@@ -101,6 +104,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PlayerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Postavke.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

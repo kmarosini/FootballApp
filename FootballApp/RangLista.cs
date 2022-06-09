@@ -25,7 +25,7 @@ namespace FootballApp
 
         private async void RangLista_Load(object sender, EventArgs e)
         {
-            List<ApiCollector.SkupIgraca> skupIgraca = await ApiCollector.PrepareForForm.DohvatiStatistikuIgraca();
+            List<ApiCollector.SkupIgraca> skupIgraca = await PrepareForForm.DohvatiStatistikuIgraca();
             foreach (var igrac in skupIgraca)
             {
                 flpStatistika.Controls.Add(new IgracStatistika(igrac));
