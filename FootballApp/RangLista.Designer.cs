@@ -35,7 +35,9 @@
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.skupIgracaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.imgLoad = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRangListPrint
@@ -63,16 +65,25 @@
             // 
             this.skupIgracaBindingSource.DataSource = typeof(ApiCollector.SkupIgraca);
             // 
+            // imgLoad
+            // 
+            this.imgLoad.Image = global::FootballApp.Resursi.loading;
+            resources.ApplyResources(this.imgLoad, "imgLoad");
+            this.imgLoad.Name = "imgLoad";
+            this.imgLoad.TabStop = false;
+            // 
             // RangLista
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.imgLoad);
             this.Controls.Add(this.flpStatistika);
             this.Controls.Add(this.btnRangListPrint);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RangLista";
             this.Load += new System.EventHandler(this.RangLista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.skupIgracaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,5 +94,6 @@
         private System.Windows.Forms.FlowLayoutPanel flpStatistika;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.PictureBox imgLoad;
     }
 }

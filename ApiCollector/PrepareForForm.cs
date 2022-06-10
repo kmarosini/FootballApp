@@ -99,7 +99,7 @@ namespace ApiCollector
 
             return gostujuciTim;
         }
-
+       
         public static async Task<List<SkupIgraca>> DohvatiStatistikuIgraca()
         {
             List<ApiCollector.Games.HomeTeamEvent> list = await DohvatiHomeTeamEvente();

@@ -34,12 +34,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flpFavoritIgraci = new System.Windows.Forms.FlowLayoutPanel();
             this.flpSviIgraci = new System.Windows.Forms.FlowLayoutPanel();
+            this.imgLoad = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // btnResetOmiljenihIgraca
             // 
-            resources.ApplyResources(this.btnResetOmiljenihIgraca, "btnResetOmiljenihIgraca");
             this.btnResetOmiljenihIgraca.BackColor = System.Drawing.Color.Firebrick;
+            resources.ApplyResources(this.btnResetOmiljenihIgraca, "btnResetOmiljenihIgraca");
             this.btnResetOmiljenihIgraca.Name = "btnResetOmiljenihIgraca";
             this.btnResetOmiljenihIgraca.UseVisualStyleBackColor = false;
             this.btnResetOmiljenihIgraca.Click += new System.EventHandler(this.btnResetOmiljenihIgraca_Click);
@@ -56,8 +58,8 @@
             // 
             // flpFavoritIgraci
             // 
-            resources.ApplyResources(this.flpFavoritIgraci, "flpFavoritIgraci");
             this.flpFavoritIgraci.AllowDrop = true;
+            resources.ApplyResources(this.flpFavoritIgraci, "flpFavoritIgraci");
             this.flpFavoritIgraci.Name = "flpFavoritIgraci";
             this.flpFavoritIgraci.DragDrop += new System.Windows.Forms.DragEventHandler(this.flpFavoritIgraci_DragDrop);
             this.flpFavoritIgraci.DragEnter += new System.Windows.Forms.DragEventHandler(this.flpFavoritIgraci_DragEnter);
@@ -67,10 +69,18 @@
             resources.ApplyResources(this.flpSviIgraci, "flpSviIgraci");
             this.flpSviIgraci.Name = "flpSviIgraci";
             // 
+            // imgLoad
+            // 
+            this.imgLoad.Image = global::FootballApp.Resursi.loading;
+            resources.ApplyResources(this.imgLoad, "imgLoad");
+            this.imgLoad.Name = "imgLoad";
+            this.imgLoad.TabStop = false;
+            // 
             // OmiljeniIgraci
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.imgLoad);
             this.Controls.Add(this.btnResetOmiljenihIgraca);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -79,6 +89,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OmiljeniIgraci";
             this.Load += new System.EventHandler(this.OmiljeniIgraci_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,5 +102,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flpFavoritIgraci;
         private System.Windows.Forms.FlowLayoutPanel flpSviIgraci;
+        private System.Windows.Forms.PictureBox imgLoad;
     }
 }

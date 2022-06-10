@@ -44,7 +44,7 @@ namespace FootballApp
             this.lblBroj.Text = igrac.Shirt_number.ToString();
             this.lblKapetan.Text = igrac.Captain ? Properties.Resources.Kapetan : Properties.Resources.Ne;
             this.textBox1.Visible = false;
-            string picPath = $@"C:\Programiranje\OOP projekt\FootballApp\MojiResursi\{igrac.Name}.jpg";
+            string picPath = $@"..\..\..\Slike\{igrac.Name}.jpg";
 
             if (File.Exists(picPath))
             {
@@ -103,17 +103,8 @@ namespace FootballApp
 
         private void SpremiSlike()
         {
-            SaveFileDialog save = new SaveFileDialog();
-            save.Filter = "*.jpg; *.jpeg; *.gif; *.bmp)| *.jpg; *.jpeg; *.gif; *.bmp";
-            save.FileName = igrac.Name;
-            save.DefaultExt = "*.jpg";
-            save.InitialDirectory = @"C:\Users\programer10.UCIONE.002\Desktop\km\FootballApp\MojiResursi\";
-
-            if (save.ShowDialog() == DialogResult.OK)
-            {
-                pbSlika.Image.Save(save.FileName);
-                MessageBox.Show(Properties.Resources.SpremljenaSlika, Properties.Resources.Notifikacija);
-            }
+            pbSlika.Image.Save($@"..\..\..\Slike\{igrac.Name}.jpg");
+            MessageBox.Show(Properties.Resources.SpremljenaSlika, Properties.Resources.Notifikacija); 
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)

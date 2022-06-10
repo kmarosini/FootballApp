@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -31,25 +32,33 @@ namespace FootballWPF
 
         private void ucIgrac_Loaded(object sender, RoutedEventArgs e)
         {
-            //string picPath = $@"C:\Programiranje\OOP projekt\FootballApp\MojiResursi\{igrac.Name}.jpg";
-            //if (File.Exists(picPath))
-            //{
-            //    BitmapImage igrc = new BitmapImage();
-            //    igrc.BeginInit();
-            //    igrc.UriSource = new Uri(picPath);
-            //    igrc.EndInit();
-            //    this.imgIgrac.Source = igrc;
-            //}
-            //else
-            //{
-            //    this.imgIgrac.Source = null;
-            //}
-           
+            string picPath = $@"..\..\..\Slike\{igrac.Name}.jpg";
+            if (File.Exists(picPath))
+            {
+                Bitmap bitmap = (Bitmap)System.Drawing.Image.FromFile(picPath);
+                MemoryStream ms = new MemoryStream();
+                bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                BitmapImage igrc = new BitmapImage();
+                
+                igrc.BeginInit();
+                igrc.CacheOption = BitmapCacheOption.OnLoad;
+                igrc.StreamSource = ms;
+                igrc.EndInit();
+                this.imgIgrac.Source = igrc;
+            }
+            else
+            {
+                this.imgIgrac.Source = null;
+            }
+
+
+
+
+
 
             this.lblIgrac.Content = igrac.Name;
             this.lblNumber.Content = igrac.Shirt_number;
-           
-            
+
         }
 
         private void ucIgrac_MouseDoubleClick(object sender, MouseButtonEventArgs e)

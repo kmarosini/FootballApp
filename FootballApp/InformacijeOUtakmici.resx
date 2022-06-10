@@ -153,7 +153,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dgvUtakmica.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="btnPrintDetalja.Location" type="System.Drawing.Point, System.Drawing">
     <value>421, 47</value>
@@ -177,6 +177,31 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnPrintDetalja.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="imgLoad.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 26</value>
+  </data>
+  <data name="imgLoad.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 72</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="imgLoad.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="imgLoad.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;imgLoad.Name" xml:space="preserve">
+    <value>imgLoad</value>
+  </data>
+  <data name="&gt;&gt;imgLoad.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imgLoad.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;imgLoad.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

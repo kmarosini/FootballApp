@@ -9,99 +9,59 @@
       d:DesignHeight="800" d:DesignWidth="800"
       Title="Formation"
       Loaded="Page_Loaded">
-    <Grid>
-        <StackPanel x:Name="pnlIgraci" Width="600">
+    <Grid Width="auto">
+        <StackPanel x:Name="pnlIgraci" MaxHeight="800" MaxWidth="800" Orientation="Horizontal">
             <StackPanel.Background>
                 <ImageBrush ImageSource="/Images/Football_field.svg.png"/>
             </StackPanel.Background>
             
-            <Grid Margin="0 40 0 0">
+            <Grid >
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
+                    <RowDefinition Height="50px"></RowDefinition>
                     <RowDefinition Height="50px"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="Goalie">
+                    <StackPanel Grid.Row="1"  Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="Goalie">
+                    </StackPanel>
+                
+                    <StackPanel Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="Defender">
+                    </StackPanel>
+                
+                    <StackPanel Grid.Row="5" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="Midfield">
+                    </StackPanel>
+                
+                    <StackPanel Grid.Row="7" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="Forward">
+                    </StackPanel>
+                
+                    <StackPanel Grid.Row="8" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="AwayForward">
+                    </StackPanel>
+                
+                    <StackPanel Grid.Row="10" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="AwayMidfield">
+                    </StackPanel>
 
+                <StackPanel Grid.Row="12" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="AwayDefender">
                 </StackPanel>
+                    <StackPanel Grid.Row="14" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="AwayGoalie">
+                    </StackPanel>       
             </Grid>
 
-            <Grid Margin="0 40 0 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50px"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="Defender">
-                </StackPanel>
-     
-            </Grid>
-            
-            <Grid Margin="0 40 0 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50px"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="Midfield">
-                </StackPanel>
-
-            </Grid>
-
-            <Grid Margin="0 40 0 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50px"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="Forward">
-                </StackPanel>
-            </Grid>
-
-            <Grid Margin="0 100 0 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50px"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="AwayForward">
-                </StackPanel>
-            </Grid>
-            <Grid Margin="0 40 0 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50px"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="AwayMidfield">
-                </StackPanel>
-            </Grid>
-            <Grid Margin="0 40 0 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50px"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="AwayDefender">
-                </StackPanel>
-            </Grid>
-            <Grid Margin="0 20 0 20">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50px"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="AwayGoalie">
-                </StackPanel>
-            </Grid>
+           
         </StackPanel>
     </Grid>
 </Page>

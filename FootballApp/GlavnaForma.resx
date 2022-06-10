@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnDetalji.Location" type="System.Drawing.Point, System.Drawing">
-    <value>651, 715</value>
+    <value>624, 715</value>
   </data>
   <data name="btnDetalji.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
@@ -144,7 +144,7 @@
     <value>1</value>
   </data>
   <data name="btnRangLista.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 715</value>
+    <value>487, 715</value>
   </data>
   <data name="btnRangLista.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
@@ -168,7 +168,7 @@
     <value>2</value>
   </data>
   <data name="btnPostavke.Location" type="System.Drawing.Point, System.Drawing">
-    <value>777, 715</value>
+    <value>755, 715</value>
   </data>
   <data name="btnPostavke.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
@@ -192,7 +192,7 @@
     <value>3</value>
   </data>
   <data name="btnOmiljeniIgraci.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 715</value>
+    <value>342, 715</value>
   </data>
   <data name="btnOmiljeniIgraci.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
@@ -216,7 +216,7 @@
     <value>4</value>
   </data>
   <data name="btnOmiljeniTim.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 715</value>
+    <value>198, 715</value>
   </data>
   <data name="btnOmiljeniTim.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>
@@ -240,7 +240,7 @@
     <value>5</value>
   </data>
   <data name="btnJezikPrvenstvo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>110, 715</value>
+    <value>57, 715</value>
   </data>
   <data name="btnJezikPrvenstvo.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 34</value>

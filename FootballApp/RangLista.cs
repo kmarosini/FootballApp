@@ -25,13 +25,15 @@ namespace FootballApp
 
         private async void RangLista_Load(object sender, EventArgs e)
         {
+            imgLoad.Visible = true;
+
             List<ApiCollector.SkupIgraca> skupIgraca = await PrepareForForm.DohvatiStatistikuIgraca();
             foreach (var igrac in skupIgraca)
             {
                 flpStatistika.Controls.Add(new IgracStatistika(igrac));
             }
 
-
+            imgLoad.Visible = false;
         }
 
         private void btnRangListPrint_Click_1(object sender, EventArgs e)

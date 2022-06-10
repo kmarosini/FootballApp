@@ -15,71 +15,118 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">IME:</Label>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <Label x:Name="lblIme"></Label>
-                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                        <Label FontWeight="Bold" FontSize="12">IME:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Label x:Name="lblIme"></Label>
+                    </StackPanel>
+                </Grid>
             </Grid>
             <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">BROJ:</Label>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <Label x:Name="lblBroj"></Label>
-                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                        <Label FontWeight="Bold" FontSize="12">BROJ:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Label x:Name="lblBroj"></Label>
+                    </StackPanel>
+                </Grid>
             </Grid>
             <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">POZICIJA:</Label>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <Label x:Name="lblPozicija"></Label>
-                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                        <Label FontWeight="Bold" FontSize="12">POZICIJA:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Label x:Name="lblPozicija"></Label>
+                    </StackPanel>
+                </Grid>
             </Grid>
             <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">KAPETAN::</Label>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <Label x:Name="lblKapetan"></Label>
-                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                        <Label FontWeight="Bold" FontSize="12">KAPETAN:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Label x:Name="lblKapetan"></Label>
+                    </StackPanel>
+                </Grid>
             </Grid>
             <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">BROJ ZABIJENIH:</Label>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <Label x:Name="lblBrojZabijenih"></Label>
-                </StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                        <Label FontWeight="Bold" FontSize="12">BROJ ZABIJENIH:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Label x:Name="lblBrojZabijenih"></Label>
+                    </StackPanel>
+                </Grid>
             </Grid>
             <Grid Margin="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">BROJ ZUTIH:</Label>
-                </StackPanel>
-                <StackPanel Grid.Column="1">
-                    <Label x:Name="lblBrojZutih"></Label>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel HorizontalAlignment="Center" Grid.Column="0">
+                        <Label FontWeight="Bold" FontSize="12">BROJ Zutih:</Label>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <Label x:Name="lblBrojZutih"></Label>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1" >
+                    <Border BorderThickness="2">
+                        <Image x:Name="imgSlika" MaxWidth="150" MaxHeight="130"></Image>
+                    </Border>
                 </StackPanel>
             </Grid>
         </StackPanel>

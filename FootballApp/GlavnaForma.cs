@@ -18,6 +18,7 @@ namespace FootballApp
         public GlavnaForma()
         {
             InitializeComponent();
+
             
             if (!SaverLoader.CreateFile())
             {
@@ -61,6 +62,7 @@ namespace FootballApp
         private void btnOmiljeniIgraci_Click(object sender, EventArgs e)
         {
             PrikaziFormuUPanelu(new OmiljeniIgraci());
+
         }
 
         private void btnRangLista_Click(object sender, EventArgs e)

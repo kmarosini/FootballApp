@@ -1,6 +1,8 @@
 ﻿using ApiCollector;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,9 +32,11 @@ namespace FootballWPF
 
         private async void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            List<ApiCollector.SkupIgraca> skupIgraca = await ApiCollector.PrepareForForm.DohvatiStatistikuIgraca();
-            
-            foreach (var statistic in skupIgraca)
+            //List<ApiCollector.SkupIgraca> skupIgraca = await ApiCollector.PrepareForForm.DohvatiStatistikuIgraca();
+            List<SkupIgraca> skup = await  PrepareForForm.DohvatiImenaIgraca();
+         
+
+            foreach (var statistic in skup)
             {
                 if (statistic.Name == igrac.Name)
                 {
@@ -42,7 +46,25 @@ namespace FootballWPF
                     lblBrojZabijenih.Content = statistic.GoalNumber;
                     lblKapetan.Content = statistic.Captain;
                     lblBroj.Content = statistic.Shirt_number;
-                    return;
+
+                    string picPath = $@"..\..\..\Slike\{igrac.Name}.jpg";
+                    if (File.Exists(picPath))
+                    {
+                        Bitmap bitmap = (Bitmap)System.Drawing.Image.FromFile(picPath);
+                        MemoryStream ms = new MemoryStream();
+                        bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                        BitmapImage igrc = new BitmapImage();
+
+                        igrc.BeginInit();
+                        igrc.CacheOption = BitmapCacheOption.OnLoad;
+                        igrc.StreamSource = ms;
+                        igrc.EndInit();
+                        this.imgSlika.Source = igrc;
+                    }
+                    else
+                    {
+                        this.imgSlika.Source = null;
+                    }
                 }
             }
         }

@@ -50,7 +50,7 @@
                         </StackPanel>
                     </Grid>
                     <Grid>
-                        <Button Width="80" Click="btnSpremi_OnClick">Show result</Button>
+                        <Button Width="80" Click="btnSpremi_OnClick">Spremi</Button>
                     </Grid>
                     <Grid Margin="50">
                         <Label x:Name="lblIzabrana" Content="XXX" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>

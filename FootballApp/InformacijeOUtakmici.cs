@@ -20,8 +20,12 @@ namespace FootballApp
 
         private async void InformacijeOUtakmici_Load(object sender, EventArgs e)
         {
+            imgLoad.Visible = true;
+
             List<ApiCollector.Games.Root> utakmica = await ApiCollector.PrepareForForm.DohvatiIgraca();
             dgvUtakmica.DataSource = utakmica;
+
+            imgLoad.Visible = false;
         }
 
         private void btnPrintDetalja_Click(object sender, EventArgs e)

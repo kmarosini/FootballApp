@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -23,6 +24,8 @@ namespace FootballApp
 
         private async void OmiljeniIgraci_Load(object sender, EventArgs e)
         {
+            imgLoad.Visible = true;
+
             List<ApiCollector.SkupIgraca> list = await ApiCollector.PrepareForForm.DohvatiImenaIgraca();
             foreach (var igrac in list)
             {
@@ -36,6 +39,14 @@ namespace FootballApp
             {
                 flpFavoritIgraci.Controls.Add(new IgracInfo(item));
             }
+
+            imgLoad.Visible = false;
+        }
+
+        private void LoadExcel()
+        {
+            // some work takes 5 sec
+            Thread.Sleep(5000);
         }
 
         private void flpFavoritIgraci_DragDrop(object sender, DragEventArgs e)

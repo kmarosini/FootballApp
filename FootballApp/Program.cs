@@ -15,9 +15,9 @@ namespace FootballApp
         [STAThread]
         static void Main()
         {
+            SaverLoader.CreateFile();
             try
-            {
-                SaverLoader.CreateFile();
+            {  
                 if (SaverLoader.Jezik == "Hrvatski")
                 {
                     System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("hr-HR");

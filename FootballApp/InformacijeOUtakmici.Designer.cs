@@ -37,8 +37,10 @@
             this.awayteamcountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rootBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnPrintDetalja = new System.Windows.Forms.Button();
+            this.imgLoad = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUtakmica)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rootBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvUtakmica
@@ -89,10 +91,18 @@
             this.btnPrintDetalja.UseVisualStyleBackColor = true;
             this.btnPrintDetalja.Click += new System.EventHandler(this.btnPrintDetalja_Click);
             // 
+            // imgLoad
+            // 
+            this.imgLoad.Image = global::FootballApp.Resursi.loading;
+            resources.ApplyResources(this.imgLoad, "imgLoad");
+            this.imgLoad.Name = "imgLoad";
+            this.imgLoad.TabStop = false;
+            // 
             // InformacijeOUtakmici
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.imgLoad);
             this.Controls.Add(this.btnPrintDetalja);
             this.Controls.Add(this.dgvUtakmica);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -100,6 +110,7 @@
             this.Load += new System.EventHandler(this.InformacijeOUtakmici_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUtakmica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rootBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -113,5 +124,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn attendanceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hometeamcountryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn awayteamcountryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox imgLoad;
     }
 }
