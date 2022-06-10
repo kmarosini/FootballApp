@@ -25,7 +25,7 @@ namespace FootballWPF
         {
             InitializeComponent();
             IspisPostavki();
-            
+            ResizeWindow();
         }
 
         private void IspisPostavki()
@@ -60,11 +60,13 @@ namespace FootballWPF
             }
             if (SaverLoader.Resolution == "Medium")
             {
-                Application.Current.MainWindow.WindowState = WindowState.Normal;
+                Application.Current.MainWindow.Height = 800;
+                Application.Current.MainWindow.Width = 1200;
             }
             if (SaverLoader.Resolution == "Small")
             {
-                Application.Current.MainWindow.WindowState = WindowState.Minimized;
+                Application.Current.MainWindow.Height = 500;
+                Application.Current.MainWindow.Width = 500;
             }
         }
     }

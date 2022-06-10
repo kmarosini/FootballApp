@@ -7,7 +7,8 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="LangChampPage"
-      Background="Pink">
+      Background="Pink"
+      >
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <Label HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Content="WPF SOCCER APP" />
         <StackPanel Orientation="Horizontal">

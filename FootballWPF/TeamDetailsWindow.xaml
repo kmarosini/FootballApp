@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:FootballWPF"
         mc:Ignorable="d"
         Title="TeamDetailsWindow" Height="300" Width="600"
-        Loaded="Window_Loaded">
+        Loaded="Window_Loaded"
+        x:Name="w1"
+        >
     <Grid>
         <StackPanel>
             <Grid Margin="10">
@@ -59,4 +61,16 @@
             </Grid>
         </StackPanel>
     </Grid>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <EventTrigger.Actions>
+                <BeginStoryboard>
+                    <Storyboard BeginTime="0" Duration="Forever">
+                        <DoubleAnimation Storyboard.TargetName="w1" Storyboard.TargetProperty="(Window.Top)" From="0" To="0" AutoReverse="true" BeginTime="0:0:2" Duration="0:0:0.5" RepeatBehavior="Forever"/>
+                        <DoubleAnimation Storyboard.TargetName="w1" Storyboard.TargetProperty="(Window.Left)" From="0" To="700" AutoReverse="true" BeginTime="0:0:2" Duration="0:0:3" RepeatBehavior="Forever"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger.Actions>
+        </EventTrigger>
+    </Window.Triggers>
 </Window>

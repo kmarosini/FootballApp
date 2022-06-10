@@ -45,11 +45,13 @@ namespace FootballWPF
             }
             if (SaverLoader.Resolution == "Medium")
             {
-                WindowState = WindowState.Normal;
+                Application.Current.MainWindow.Height = 800;
+                Application.Current.MainWindow.Width = 1200;
             }
             if (SaverLoader.Resolution == "Small")
             {
-                WindowState = WindowState.Minimized;
+                Application.Current.MainWindow.Height = 500;
+                Application.Current.MainWindow.Width = 500;
             }     
         }
 
