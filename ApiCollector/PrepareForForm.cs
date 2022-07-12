@@ -177,6 +177,26 @@ namespace ApiCollector
             return keyValuePairs;
         }
 
+        public static void LanguageCheck()
+        {
+            string lang = SaverLoader.Jezik;
+            switch (lang)
+            {
+                case "Engleski":
+                    System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo("en");
+                    System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("en");
+                    break;
+                case "Hrvatski":
+                    System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo("hr-HR");
+                    System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("hr-HR");
+                    break;
+                default:
+                    System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.GetCultureInfo("hr-HR");
+                    System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("hr-HR");
+                    break;
+            }
+        }
+
     }
 
 

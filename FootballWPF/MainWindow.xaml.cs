@@ -34,6 +34,7 @@ namespace FootballWPF
             }
             SaverLoader.UcitajPostavke();
             ProvjeriRezoluciju();
+            PrepareForForm.LanguageCheck();
             
         }
 
@@ -77,7 +78,7 @@ namespace FootballWPF
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MessageBoxResult result = System.Windows.MessageBox.Show("Jeste li sigurni da želite izaći iz aplikacije?", "Upozorenje", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = System.Windows.MessageBox.Show(Properties.Resources.IzlazMB, Properties.Resources.UpozorenjeMB, MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
             {
                 return;
@@ -87,5 +88,7 @@ namespace FootballWPF
                 e.Cancel = true;
             }
         }
+
+        
     }
 }

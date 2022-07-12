@@ -90,7 +90,7 @@ namespace FootballWPF
             }
             catch (Exception)
             {
-                MessageBox.Show("Niste izabrali protivnika!");
+                MessageBox.Show(Properties.Resources.NisteIzabraliProtivnikaMB);
             } 
         }
     }

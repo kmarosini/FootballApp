@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:language="clr-namespace:FootballWPF.Properties"
         xmlns:local="clr-namespace:FootballWPF"
         mc:Ignorable="d"
         Title="TeamDetailsWindow" Height="300" Width="600"
@@ -17,7 +18,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">NAZIV:</Label>
+                    <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.ProtivnikWindowNazivLabel}"></Label>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
                     <Label x:Name="lblNaziv"></Label>
@@ -29,7 +30,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">FIFA CODE:</Label>
+                    <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.ProtivnikWindowFifaLabel}"></Label>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
                     <Label x:Name="lblFifa"></Label>
@@ -41,7 +42,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12"> ODIGRANE/POBJEDE/PORAZI/NEODLUČENI:</Label>
+                    <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.ProtivnikWindowStatisticLabel}"></Label>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
                     <Label x:Name="lblOdigraniPobjede"></Label>
@@ -53,7 +54,7 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                    <Label FontWeight="Bold" FontSize="12">ZABIJENI/PRIMLJENI/RAZLIKA:</Label>
+                    <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.ProtivnikWindowScoredLabel}"></Label>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
                     <Label x:Name="lblGoloviZabijeni"></Label>

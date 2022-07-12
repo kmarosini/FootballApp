@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FootballWPF.Properties
-{
-
-
+namespace FootballWPF.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -19,52 +19,368 @@ namespace FootballWPF.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    public class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        public static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FootballWPF.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        public static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BROJ:.
+        /// </summary>
+        public static string BrojLabel {
+            get {
+                return ResourceManager.GetString("BrojLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BROJ ZABIJENIH:.
+        /// </summary>
+        public static string BrojZabijenihLabel {
+            get {
+                return ResourceManager.GetString("BrojZabijenihLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to BROJ ZUTIH:.
+        /// </summary>
+        public static string BrojZutihLabel {
+            get {
+                return ResourceManager.GetString("BrojZutihLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postavke.
+        /// </summary>
+        public static string CetvrtiNavButton {
+            get {
+                return ResourceManager.GetString("CetvrtiNavButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Utakmica.
+        /// </summary>
+        public static string DrugiNavButton {
+            get {
+                return ResourceManager.GetString("DrugiNavButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to IME:.
+        /// </summary>
+        public static string ImeLabel {
+            get {
+                return ResourceManager.GetString("ImeLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeste li sigurni da želite izaći iz aplikacije?.
+        /// </summary>
+        public static string IzlazMB {
+            get {
+                return ResourceManager.GetString("IzlazMB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jezik.
+        /// </summary>
+        public static string JezikCB {
+            get {
+                return ResourceManager.GetString("JezikCB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Morate odabrati jezik, prvenstvo i rezoluciju!.
+        /// </summary>
+        public static string JezikPrvenstvoRezolucijaWar {
+            get {
+                return ResourceManager.GetString("JezikPrvenstvoRezolucijaWar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jezik i prvenstvo su spremljeni!.
+        /// </summary>
+        public static string JezikSpremljen {
+            get {
+                return ResourceManager.GetString("JezikSpremljen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KAPETAN:.
+        /// </summary>
+        public static string KapetanLabel {
+            get {
+                return ResourceManager.GetString("KapetanLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nacin Prikaza.
+        /// </summary>
+        public static string NacinPrikazaCB {
+            get {
+                return ResourceManager.GetString("NacinPrikazaCB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Niste izabrali protivnika!.
+        /// </summary>
+        public static string NisteIzabraliProtivnikaMB {
+            get {
+                return ResourceManager.GetString("NisteIzabraliProtivnikaMB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Niste odabrali reprezentaciju!.
+        /// </summary>
+        public static string NisteOdabraliReprezentaciju {
+            get {
+                return ResourceManager.GetString("NisteOdabraliReprezentaciju", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ODABRANA REZOLUCIJA:.
+        /// </summary>
+        public static string OdabranaRezolucija {
+            get {
+                return ResourceManager.GetString("OdabranaRezolucija", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ODABRANI JEZIK:.
+        /// </summary>
+        public static string OdabraniJezik {
+            get {
+                return ResourceManager.GetString("OdabraniJezik", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ODABRANO PRVENSTVO:.
+        /// </summary>
+        public static string OdabranoPrvenstvo {
+            get {
+                return ResourceManager.GetString("OdabranoPrvenstvo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Omiljena reprezentacija.
+        /// </summary>
+        public static string OmiljenaReprezentacijaCB {
+            get {
+                return ResourceManager.GetString("OmiljenaReprezentacijaCB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pogledaj detalje.
+        /// </summary>
+        public static string PogledajDetaljeButton {
+            get {
+                return ResourceManager.GetString("PogledajDetaljeButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to POZICIJA:.
+        /// </summary>
+        public static string PozicijaLabel {
+            get {
+                return ResourceManager.GetString("PozicijaLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Promijeni omiljenu reprezentaciju.
+        /// </summary>
+        public static string PromijeniReprezentacijuButton {
+            get {
+                return ResourceManager.GetString("PromijeniReprezentacijuButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jeste li sigurni da želite promjeniti postavke?.
+        /// </summary>
+        public static string PromjenaPostavkiMB {
+            get {
+                return ResourceManager.GetString("PromjenaPostavkiMB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Niste izabrali protivnika!.
+        /// </summary>
+        public static string Protivnik {
+            get {
+                return ResourceManager.GetString("Protivnik", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Protivnik.
+        /// </summary>
+        public static string ProtivnikCB {
+            get {
+                return ResourceManager.GetString("ProtivnikCB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to FIFA CODE:.
+        /// </summary>
+        public static string ProtivnikWindowFifaLabel {
+            get {
+                return ResourceManager.GetString("ProtivnikWindowFifaLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to NAZIV:.
+        /// </summary>
+        public static string ProtivnikWindowNazivLabel {
+            get {
+                return ResourceManager.GetString("ProtivnikWindowNazivLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ZABIJENI/PRIMLJENI/RAZLIKA:.
+        /// </summary>
+        public static string ProtivnikWindowScoredLabel {
+            get {
+                return ResourceManager.GetString("ProtivnikWindowScoredLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ODIGRANE/POBJEDE/PORAZI/NEODLUCENO:.
+        /// </summary>
+        public static string ProtivnikWindowStatisticLabel {
+            get {
+                return ResourceManager.GetString("ProtivnikWindowStatisticLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Prvenstvo.
+        /// </summary>
+        public static string PrvenstvoCB {
+            get {
+                return ResourceManager.GetString("PrvenstvoCB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jezik/Prvenstvo.
+        /// </summary>
+        public static string PrviNavButton {
+            get {
+                return ResourceManager.GetString("PrviNavButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ODABRANA REPREZENTACIJA:.
+        /// </summary>
+        public static string Reprezentacija {
+            get {
+                return ResourceManager.GetString("Reprezentacija", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spremi.
+        /// </summary>
+        public static string SpremiButton {
+            get {
+                return ResourceManager.GetString("SpremiButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spremi.
+        /// </summary>
+        public static string SpremiPostavkeButton {
+            get {
+                return ResourceManager.GetString("SpremiPostavkeButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Omiljeni tim je promijenjen! Postavke ce biti promijenjene nakon zatvaranja aplikacije!.
+        /// </summary>
+        public static string TimPromjenjen {
+            get {
+                return ResourceManager.GetString("TimPromjenjen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Postave.
+        /// </summary>
+        public static string TreciNavButton {
+            get {
+                return ResourceManager.GetString("TreciNavButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upozorenje!.
+        /// </summary>
+        public static string UpozorenjeMB {
+            get {
+                return ResourceManager.GetString("UpozorenjeMB", resourceCulture);
             }
         }
     }

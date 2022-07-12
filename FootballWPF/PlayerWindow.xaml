@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FootballWPF"
+        xmlns:language="clr-namespace:FootballWPF.Properties"
         mc:Ignorable="d"
         Title="PlayerWindow" Height="450" Width="800"
         Loaded="Window_Loaded"
@@ -22,7 +23,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                        <Label FontWeight="Bold" FontSize="12">IME:</Label>
+                        <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.ImeLabel}"></Label>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
                         <Label x:Name="lblIme"></Label>
@@ -40,7 +41,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                        <Label FontWeight="Bold" FontSize="12">BROJ:</Label>
+                        <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.BrojLabel}"></Label>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
                         <Label x:Name="lblBroj"></Label>
@@ -58,7 +59,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                        <Label FontWeight="Bold" FontSize="12">POZICIJA:</Label>
+                        <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.PozicijaLabel}"></Label>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
                         <Label x:Name="lblPozicija"></Label>
@@ -76,7 +77,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                        <Label FontWeight="Bold" FontSize="12">KAPETAN:</Label>
+                        <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.KapetanLabel}"></Label>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
                         <Label x:Name="lblKapetan"></Label>
@@ -94,7 +95,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                        <Label FontWeight="Bold" FontSize="12">BROJ ZABIJENIH:</Label>
+                        <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.BrojZabijenihLabel}"></Label>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
                         <Label x:Name="lblBrojZabijenih"></Label>
@@ -112,7 +113,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <StackPanel HorizontalAlignment="Center" Grid.Column="0">
-                        <Label FontWeight="Bold" FontSize="12">BROJ Zutih:</Label>
+                        <Label FontWeight="Bold" FontSize="12" Content="{x:Static language:Resources.BrojZutihLabel}"></Label>
                     </StackPanel>
                     <StackPanel Grid.Column="1">
                         <Label x:Name="lblBrojZutih"></Label>

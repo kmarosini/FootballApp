@@ -30,22 +30,30 @@ namespace FootballWPF
 
         private void IspisPostavki()
         {
-            lblJezik.Content = $"ODABRANI JEZIK: {SaverLoader.Jezik}";
-            lblPrvenstvo.Content = $"ODABRANO PRVENSTVO: {SaverLoader.Prvenstvo}";
-            lblScreenSize.Content = $"ODABRANA REZOLUCIJA: {SaverLoader.Resolution}";
+            lblJezik.Content = $"{Properties.Resources.OdabraniJezik} {SaverLoader.Jezik}";
+            lblPrvenstvo.Content = $"{Properties.Resources.OdabranoPrvenstvo} {SaverLoader.Prvenstvo}";
+            lblScreenSize.Content = $"{Properties.Resources.OdabranaRezolucija} {SaverLoader.Resolution}";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = System.Windows.MessageBox.Show("Jeste li sigurni da želite promjeniti postavke?", "Upozorenje", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            MessageBoxResult result = System.Windows.MessageBox.Show(Properties.Resources.PromjenaPostavkiMB, Properties.Resources.UpozorenjeMB, MessageBoxButton.YesNo, MessageBoxImage.Question);
             if (result == MessageBoxResult.Yes)
             {
                 SaverLoader.Jezik = cbJezik.Text;
                 SaverLoader.Prvenstvo = cbPrvenstvo.Text;
                 SaverLoader.Resolution = cbResolution.Text;
+                if (SaverLoader.Jezik == "" || SaverLoader.Prvenstvo == "" || SaverLoader.Resolution == "")
+                {
+                    System.Windows.MessageBox.Show(Properties.Resources.JezikPrvenstvoRezolucijaWar, Properties.Resources.UpozorenjeMB);
+                }
+                else
+                {
+                    System.Windows.MessageBox.Show(Properties.Resources.JezikSpremljen, Properties.Resources.UpozorenjeMB);
+                    SaverLoader.SpremiJezikIPrvenstvo();
+                    LangChampPage.ResizeWindow();
 
-                SaverLoader.SpremiJezikIPrvenstvo();
-                LangChampPage.ResizeWindow();
+                }
             }
             if (result == MessageBoxResult.No)
             {

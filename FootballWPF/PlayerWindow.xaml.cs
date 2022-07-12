@@ -34,18 +34,98 @@ namespace FootballWPF
         {
             //List<ApiCollector.SkupIgraca> skupIgraca = await ApiCollector.PrepareForForm.DohvatiStatistikuIgraca();
             List<SkupIgraca> skup = await  PrepareForForm.DohvatiImenaIgraca();
-         
+            List<ApiCollector.Games.Root> list = await PrepareForForm.DohvatiIgraca();
 
-            foreach (var statistic in skup)
+            Games.Root specific = list.Find((x =>
             {
-                if (statistic.Name == igrac.Name)
+                if (x.home_team.code == SaverLoader.tim.Fifa_code && x.away_team.code == SaverLoader.protivnik)
                 {
-                    lblIme.Content = statistic.Name;
-                    lblPozicija.Content = statistic.Position;
-                    lblBrojZutih.Content = statistic.YellowCard;
-                    lblBrojZabijenih.Content = statistic.GoalNumber;
-                    lblKapetan.Content = statistic.Captain;
-                    lblBroj.Content = statistic.Shirt_number;
+                    return true;
+                }
+                if (x.home_team.code == SaverLoader.protivnik && x.away_team.code == SaverLoader.tim.Fifa_code)
+                {
+                    return true;
+                }
+                return false;
+            }));
+
+
+            //foreach (var statistic in skup)
+            //{
+            //    if (statistic.Name == igrac.Name)
+            //    {
+            //        lblIme.Content = statistic.Name;
+            //        lblPozicija.Content = statistic.Position;
+            //        lblBrojZutih.Content = statistic.YellowCard;
+            //        lblBrojZabijenih.Content = statistic.GoalNumber;
+            //        lblKapetan.Content = statistic.Captain;
+            //        lblBroj.Content = statistic.Shirt_number;
+
+            //        string picPath = $@"..\..\..\Slike\{igrac.Name}.jpg";
+            //        if (File.Exists(picPath))
+            //        {
+            //            Bitmap bitmap = (Bitmap)System.Drawing.Image.FromFile(picPath);
+            //            MemoryStream ms = new MemoryStream();
+            //            bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            //            BitmapImage igrc = new BitmapImage();
+
+            //            igrc.BeginInit();
+            //            igrc.CacheOption = BitmapCacheOption.OnLoad;
+            //            igrc.StreamSource = ms;
+            //            igrc.EndInit();
+            //            this.imgSlika.Source = igrc;
+            //        }
+            //        else
+            //        {
+            //            this.imgSlika.Source = null;
+            //        }
+            //    }
+
+                
+            //}
+
+            foreach (var item in specific.home_team_statistics.starting_eleven)
+            {
+                if (item.Name == igrac.Name )
+                {
+                    lblIme.Content = item.Name;
+                    lblPozicija.Content = item.Position;
+                    lblBrojZutih.Content = item.YellowCard;
+                    lblBrojZabijenih.Content = item.GoalNumber;
+                    lblKapetan.Content = item.Captain;
+                    lblBroj.Content = item.Shirt_number;
+
+                    string picPath = $@"..\..\..\Slike\{igrac.Name}.jpg";
+                    if (File.Exists(picPath))
+                    {
+                        Bitmap bitmap = (Bitmap)System.Drawing.Image.FromFile(picPath);
+                        MemoryStream ms = new MemoryStream();
+                        bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                        BitmapImage igrc = new BitmapImage();
+
+                        igrc.BeginInit();
+                        igrc.CacheOption = BitmapCacheOption.OnLoad;
+                        igrc.StreamSource = ms;
+                        igrc.EndInit();
+                        this.imgSlika.Source = igrc;
+                    }
+                    else
+                    {
+                        this.imgSlika.Source = null;
+                    }
+                }
+            }
+
+            foreach (var item in specific.away_team_statistics.starting_eleven)
+            {
+                if (item.Name == igrac.Name)
+                {
+                    lblIme.Content = item.Name;
+                    lblPozicija.Content = item.Position;
+                    lblBrojZutih.Content = item.YellowCard;
+                    lblBrojZabijenih.Content = item.GoalNumber;
+                    lblKapetan.Content = item.Captain;
+                    lblBroj.Content = item.Shirt_number;
 
                     string picPath = $@"..\..\..\Slike\{igrac.Name}.jpg";
                     if (File.Exists(picPath))

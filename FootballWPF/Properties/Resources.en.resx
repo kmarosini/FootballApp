@@ -118,111 +118,114 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BrojLabel" xml:space="preserve">
-    <value>BROJ:</value>
+    <value>NUMBER:</value>
   </data>
   <data name="BrojZabijenihLabel" xml:space="preserve">
-    <value>BROJ ZABIJENIH:</value>
+    <value>SCORED:</value>
   </data>
   <data name="BrojZutihLabel" xml:space="preserve">
-    <value>BROJ ZUTIH:</value>
+    <value>YELLOW CARDS:</value>
   </data>
   <data name="CetvrtiNavButton" xml:space="preserve">
-    <value>Postavke</value>
+    <value>Settings</value>
   </data>
   <data name="DrugiNavButton" xml:space="preserve">
-    <value>Utakmica</value>
+    <value>Game</value>
   </data>
   <data name="ImeLabel" xml:space="preserve">
-    <value>IME:</value>
+    <value>NAME:</value>
   </data>
   <data name="IzlazMB" xml:space="preserve">
-    <value>Jeste li sigurni da želite izaći iz aplikacije?</value>
+    <value>Are you sure that you want to exit application?</value>
   </data>
   <data name="JezikCB" xml:space="preserve">
-    <value>Jezik</value>
+    <value>Language</value>
   </data>
   <data name="JezikPrvenstvoRezolucijaWar" xml:space="preserve">
-    <value>Morate odabrati jezik, prvenstvo i rezoluciju!</value>
+    <value>You must choose language, resolution and championship!</value>
   </data>
   <data name="JezikSpremljen" xml:space="preserve">
-    <value>Jezik i prvenstvo su spremljeni!</value>
+    <value>Language and championship saved!</value>
   </data>
   <data name="KapetanLabel" xml:space="preserve">
-    <value>KAPETAN:</value>
+    <value>CAPTAIN:</value>
   </data>
   <data name="NacinPrikazaCB" xml:space="preserve">
-    <value>Nacin Prikaza</value>
+    <value>Resolution</value>
   </data>
   <data name="NisteIzabraliProtivnikaMB" xml:space="preserve">
-    <value>Niste izabrali protivnika!</value>
+    <value>You didn't chose opponent!</value>
   </data>
   <data name="NisteOdabraliReprezentaciju" xml:space="preserve">
-    <value>Niste odabrali reprezentaciju!</value>
+    <value>You didn't select team!</value>
   </data>
   <data name="OdabranaRezolucija" xml:space="preserve">
-    <value>ODABRANA REZOLUCIJA:</value>
+    <value>RESOLUTION:</value>
   </data>
   <data name="OdabraniJezik" xml:space="preserve">
-    <value>ODABRANI JEZIK:</value>
+    <value>LANGUAGE:</value>
   </data>
   <data name="OdabranoPrvenstvo" xml:space="preserve">
-    <value>ODABRANO PRVENSTVO:</value>
+    <value>CHAMPIONSHIP:</value>
   </data>
   <data name="OmiljenaReprezentacijaCB" xml:space="preserve">
-    <value>Omiljena reprezentacija</value>
+    <value>Favourite team</value>
   </data>
   <data name="PogledajDetaljeButton" xml:space="preserve">
-    <value>Pogledaj detalje</value>
+    <value>Details</value>
   </data>
   <data name="PozicijaLabel" xml:space="preserve">
-    <value>POZICIJA:</value>
+    <value>POSITION:</value>
   </data>
   <data name="PromijeniReprezentacijuButton" xml:space="preserve">
-    <value>Promijeni omiljenu reprezentaciju</value>
+    <value>Change favourite</value>
   </data>
   <data name="PromjenaPostavkiMB" xml:space="preserve">
-    <value>Jeste li sigurni da želite promjeniti postavke?</value>
+    <value>Are you sure that you want to change settings?</value>
   </data>
   <data name="Protivnik" xml:space="preserve">
-    <value>Niste izabrali protivnika!</value>
+    <value>You didn't chose opponent!</value>
   </data>
   <data name="ProtivnikCB" xml:space="preserve">
-    <value>Protivnik</value>
+    <value>Opponent</value>
   </data>
   <data name="ProtivnikWindowFifaLabel" xml:space="preserve">
     <value>FIFA CODE:</value>
   </data>
   <data name="ProtivnikWindowNazivLabel" xml:space="preserve">
-    <value>NAZIV:</value>
+    <value>NAME:</value>
   </data>
   <data name="ProtivnikWindowScoredLabel" xml:space="preserve">
-    <value>ZABIJENI/PRIMLJENI/RAZLIKA:</value>
+    <value>SCORED/CONCEDED/DIFF:</value>
   </data>
   <data name="ProtivnikWindowStatisticLabel" xml:space="preserve">
-    <value>ODIGRANE/POBJEDE/PORAZI/NEODLUCENO:</value>
+    <value>PLAYED/WINS/LOSES/NO-WINNER:</value>
   </data>
   <data name="PrvenstvoCB" xml:space="preserve">
-    <value>Prvenstvo</value>
+    <value>Championship</value>
   </data>
   <data name="PrviNavButton" xml:space="preserve">
-    <value>Jezik/Prvenstvo</value>
+    <value>Language/Champ.</value>
   </data>
   <data name="Reprezentacija" xml:space="preserve">
-    <value>ODABRANA REPREZENTACIJA:</value>
+    <value>SELECTED TEAM:</value>
   </data>
   <data name="SpremiButton" xml:space="preserve">
-    <value>Spremi</value>
+    <value>Save</value>
   </data>
   <data name="SpremiPostavkeButton" xml:space="preserve">
-    <value>Spremi</value>
+    <value>Save</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
   </data>
   <data name="TimPromjenjen" xml:space="preserve">
-    <value>Omiljeni tim je promijenjen! Postavke ce biti promijenjene nakon zatvaranja aplikacije!</value>
+    <value>Favourite team changed! Settings will be applied after closing the app!</value>
   </data>
   <data name="TreciNavButton" xml:space="preserve">
-    <value>Postave</value>
+    <value>Settings</value>
   </data>
   <data name="UpozorenjeMB" xml:space="preserve">
-    <value>Upozorenje!</value>
+    <value>Warning!</value>
   </data>
 </root>

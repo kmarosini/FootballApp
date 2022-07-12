@@ -36,7 +36,16 @@ namespace FootballWPF
             }
 
             cbOmiljenaReprezentacija.ItemsSource = list;
-            lblIzabrana.Content = $"IZABRANA REPREZENTACIJA: {SaverLoader.tim.Fifa_code}";
+            try
+            {
+                lblIzabrana.Content = $"{Properties.Resources.Reprezentacija} {SaverLoader.tim.Fifa_code}";
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(Properties.Resources.NisteOdabraliReprezentaciju);
+            }
 
         }
 
@@ -45,9 +54,17 @@ namespace FootballWPF
         {
             SaverLoader.tim = new ApiCollector.Tim();
             var tim = (Tim)cbOmiljenaReprezentacija.SelectedValue;
-            SaverLoader.tim.Fifa_code = tim.Fifa_code;
-            SaverLoader.SpremiJezikIPrvenstvo();
-            MessageBox.Show("Omiljeni tim je promijenjen! Postavke ce biti promijenjene nakon zatvaranja aplikacije!");
+            if (cbOmiljenaReprezentacija.SelectedValue == null)
+            {
+                MessageBox.Show(Properties.Resources.NisteOdabraliReprezentaciju);
+            }
+            else
+            {
+                SaverLoader.tim.Fifa_code = tim.Fifa_code;
+                SaverLoader.SpremiJezikIPrvenstvo();
+                MessageBox.Show(Properties.Resources.TimPromjenjen);
+            }
+            
         }
 
         private async void btnSpremi_OnClick(object sender, RoutedEventArgs e)
@@ -77,7 +94,7 @@ namespace FootballWPF
             }
             catch (Exception)
             {
-                MessageBox.Show("Niste izabrali protivnika!");
+                MessageBox.Show(Properties.Resources.Protivnik);
             }
         }
 

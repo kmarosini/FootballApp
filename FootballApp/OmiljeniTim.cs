@@ -21,12 +21,10 @@ namespace FootballApp
 
         private async void OmiljeniTim_Load(object sender, EventArgs e)
         {
-            imgLoad.Visible = true;
 
             List<ApiCollector.Tim> list = await Collector.DohvatiMuskoPrvenstvo();
             cbOmiljeniTim.DataSource = list;     
             
-            imgLoad.Visible=false;
         }
 
         private void btnSpremiOmiljeniTim_Click(object sender, EventArgs e)

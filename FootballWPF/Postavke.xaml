@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FootballWPF"
+      xmlns:language="clr-namespace:FootballWPF.Properties"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Postavke">
@@ -12,21 +13,21 @@
         <Label HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Content="WPF SOCCER APP" />
         <StackPanel Orientation="Horizontal">
             <StackPanel Margin="10 0 40 10">
-                <Label Content="Prvenstvo:"/>
+                <Label Content="{x:Static language:Resources.PrvenstvoCB}"/>
                 <ComboBox Width="100" x:Name="cbPrvenstvo">
                     <ComboBoxItem>Muško</ComboBoxItem>
                     <ComboBoxItem>Žensko</ComboBoxItem>
                 </ComboBox>
             </StackPanel>
             <StackPanel Margin="10 0 40 10">
-                <Label Content="Jezik:" />
+                <Label Content="{x:Static language:Resources.JezikCB}" />
                 <ComboBox Width="100" x:Name="cbJezik">
                     <ComboBoxItem>Engleski</ComboBoxItem>
                     <ComboBoxItem>Hrvatski</ComboBoxItem>
                 </ComboBox>
             </StackPanel>
             <StackPanel Margin="10 0 40 10">
-                <Label Content="Nacin Prikaza:"/>
+                <Label Content="{x:Static language:Resources.NacinPrikazaCB}"/>
                 <ComboBox Width="100" x:Name="cbResolution">
                     <ComboBoxItem>Fullscreen</ComboBoxItem>
                     <ComboBoxItem>Medium</ComboBoxItem>
@@ -34,7 +35,7 @@
                 </ComboBox>
             </StackPanel>
         </StackPanel>
-        <Button Margin="40" Width="100" Click="Button_Click">Spremi</Button>
+        <Button Margin="40" Width="100" Click="Button_Click" Content="{x:Static language:Resources.SpremiButton}"></Button>
         <Label Content="XXX" x:Name="lblPrvenstvo" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
         <Label Content="XXX" x:Name="lblJezik" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>
         <Label Content="XXX" x:Name="lblScreenSize" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>

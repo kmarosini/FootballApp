@@ -7,6 +7,7 @@
       xmlns:uc="clr-namespace:FootballWPF"
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="800"
+      xmlns:language="clr-namespace:FootballWPF.Properties"
       Title="Formation"
       Loaded="Page_Loaded">
     <Grid Width="auto">

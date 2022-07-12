@@ -30,9 +30,9 @@ namespace FootballWPF
 
         private void IspisPostavki()
         {
-            lblJezik.Content = $"ODABRANI JEZIK: {SaverLoader.Jezik}";
-            lblPrvenstvo.Content = $"ODABRANO PRVENSTVO: {SaverLoader.Prvenstvo}";
-            lblScreenSize.Content = $"ODABRANA REZOLUCIJA: {SaverLoader.Resolution}";
+            lblJezik.Content = $"{Properties.Resources.OdabraniJezik} {SaverLoader.Jezik}";
+            lblPrvenstvo.Content = $"{Properties.Resources.OdabranoPrvenstvo} {SaverLoader.Prvenstvo}";
+            lblScreenSize.Content = $"{Properties.Resources.OdabranaRezolucija} {SaverLoader.Resolution}";
         }
 
         private void btnSpremi_Click(object sender, RoutedEventArgs e)
@@ -42,11 +42,11 @@ namespace FootballWPF
             SaverLoader.Resolution = cbResolution.Text;
             if (SaverLoader.Jezik == "" || SaverLoader.Prvenstvo == "" || SaverLoader.Resolution == "")
             {
-                MessageBox.Show("Morate odabrati i jezik, prvenstvo i rezoluciju!", "Warning");
+                MessageBox.Show(Properties.Resources.JezikPrvenstvoRezolucijaWar, Properties.Resources.UpozorenjeMB);
             }
             else
             {
-                MessageBox.Show("Jezik i prvenstvo su spremljeni!", "Notification");
+                MessageBox.Show(Properties.Resources.JezikSpremljen, Properties.Resources.UpozorenjeMB);
                 SaverLoader.SpremiJezikIPrvenstvo();
                 ResizeWindow();
             }

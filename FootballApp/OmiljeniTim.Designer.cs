@@ -34,8 +34,6 @@
             this.cbOmiljeniTim = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblIzabraniTim = new System.Windows.Forms.Label();
-            this.imgLoad = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSpremiOmiljeniTim
@@ -68,18 +66,10 @@
             resources.ApplyResources(this.lblIzabraniTim, "lblIzabraniTim");
             this.lblIzabraniTim.Name = "lblIzabraniTim";
             // 
-            // imgLoad
-            // 
-            this.imgLoad.Image = global::FootballApp.Resursi.loading;
-            resources.ApplyResources(this.imgLoad, "imgLoad");
-            this.imgLoad.Name = "imgLoad";
-            this.imgLoad.TabStop = false;
-            // 
             // OmiljeniTim
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.imgLoad);
             this.Controls.Add(this.lblIzabraniTim);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSpremiOmiljeniTim);
@@ -88,7 +78,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OmiljeniTim";
             this.Load += new System.EventHandler(this.OmiljeniTim_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.imgLoad)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +90,5 @@
         private System.Windows.Forms.ComboBox cbOmiljeniTim;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblIzabraniTim;
-        private System.Windows.Forms.PictureBox imgLoad;
     }
 }

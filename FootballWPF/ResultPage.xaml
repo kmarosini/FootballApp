@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FootballWPF"
+      xmlns:language="clr-namespace:FootballWPF.Properties"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="ResultPage"
@@ -20,17 +21,17 @@
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
                         <StackPanel Grid.Column="0" Margin="10 0 40 10">
-                            <Label Content="Omiljena reprezentacija:"/>
+                            <Label Content="{x:Static language:Resources.OmiljenaReprezentacijaCB}"/>
                             <ComboBox x:Name="cbOmiljenaReprezentacija">
                             </ComboBox>
-                            <Button Margin="10" Width="90" Click="btnFavoritDetalji_OnClick">Pogledaj detalje</Button>
-                            <Button Content="Promijeni omiljenu reprezentaciju" Width="200" Margin="20" Click="PromijeniReprezentaciju_OnClick"/>
+                            <Button Margin="10" Width="90" Click="btnFavoritDetalji_OnClick" Content="{x:Static language:Resources.PogledajDetaljeButton}"></Button>
+                            <Button Content="{x:Static language:Resources.PromijeniReprezentacijuButton}" Width="200" Margin="20" Click="PromijeniReprezentaciju_OnClick"/>
                         </StackPanel>
                         <StackPanel Grid.Column="1" Margin="10 0 40 10">
-                            <Label Content="Protivnik:" />
+                            <Label Content="{x:Static language:Resources.ProtivnikCB}" />
                             <ComboBox x:Name="cbProtivnik">
                             </ComboBox>
-                            <Button Margin="10" Width="90" Click="btnProtivnikDetalji_OnClick">Pogledaj detalje</Button>
+                            <Button Margin="10" Width="90" Click="btnProtivnikDetalji_OnClick" Content="{x:Static language:Resources.PogledajDetaljeButton}"></Button>
                         </StackPanel>
                     </Grid>
                     <Grid>
@@ -50,7 +51,7 @@
                         </StackPanel>
                     </Grid>
                     <Grid>
-                        <Button Width="80" Click="btnSpremi_OnClick">Spremi</Button>
+                        <Button Width="80" Click="btnSpremi_OnClick" Content="{x:Static language:Resources.SpremiPostavkeButton}"></Button>
                     </Grid>
                     <Grid Margin="50">
                         <Label x:Name="lblIzabrana" Content="XXX" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold"/>

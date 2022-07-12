@@ -145,7 +145,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnSpremiOmiljeniTim.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -175,7 +175,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="cbOmiljeniTim.Location" type="System.Drawing.Point, System.Drawing">
     <value>415, 293</value>
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cbOmiljeniTim.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -223,7 +223,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="lblIzabraniTim.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -253,30 +253,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblIzabraniTim.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="imgLoad.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 51</value>
-  </data>
-  <data name="imgLoad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 98</value>
-  </data>
-  <data name="imgLoad.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="imgLoad.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;imgLoad.Name" xml:space="preserve">
-    <value>imgLoad</value>
-  </data>
-  <data name="&gt;&gt;imgLoad.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imgLoad.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;imgLoad.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
